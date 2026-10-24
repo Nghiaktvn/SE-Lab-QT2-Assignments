@@ -1,0 +1,17 @@
+@page "/login"
+@model AgentPortal.Pages.LoginModel
+@{ ViewData["Title"] = "Agent sign in"; }
+<section class="login-shell">
+<div class="login-story" aria-labelledby="login-story-title"><p class="eyebrow">THE PARTNER ADVANTAGE</p><h1 id="login-story-title">Good business.<br /><em>Great supply.</em></h1><p>Everyday essentials, one connected catalog. Keep your shelves ready for what comes next.</p>
+<div class="login-motion"><video data-motion data-motion-manual muted loop playsinline preload="none" poster="/media/northstar-3d-hero.png" aria-label="Northstar 30-second animated wholesale film"><source src="/media/northstar-story-web.mp4" type="video/mp4" /></video><span class="login-art-note">✦ Everyday essentials. Extraordinary business.</span><button class="motion-toggle" type="button" data-motion-toggle>Play animation</button></div>
+<div class="story-points"><span><i>✓</i> Live inventory</span><span><i>✓</i> Multi-item orders</span><span><i>✓</i> Order tracking</span></div></div>
+<div class="login-form-panel"><span class="login-form-mark" aria-hidden="true">✳</span><p class="eyebrow">AGENT PORTAL</p><h2>Welcome back.</h2><p>Sign in to your wholesale workspace.</p>
+@if (!string.IsNullOrEmpty(Model.Error)) { <div class="alert" role="alert">@Model.Error</div> }
+<form method="post" asp-page="/Login" class="login-form">
+<input asp-for="ReturnUrl" type="hidden" />
+<label>Email address <input asp-for="Email" type="email" autocomplete="username" placeholder="you@company.com" maxlength="254" required /></label>
+<label>Password <span class="password-field"><input asp-for="Password" type="password" autocomplete="current-password" placeholder="Enter your password" maxlength="256" required /><button type="button" data-toggle-password aria-label="Show password">Show</button></span></label>
+<button class="primary wide" type="submit">Sign in <span aria-hidden="true">→</span></button></form>
+<div class="login-help"><strong>Need an agent account?</strong><p>Your warehouse administrator can register your company and provide access.</p></div>
+<details class="demo-access"><summary>Classroom demo access</summary><p>Agent: agent01@@wholesale.local<br />Password: Demo123!<br />The Admin account signs in through the desktop app.</p></details>
+</div></section>

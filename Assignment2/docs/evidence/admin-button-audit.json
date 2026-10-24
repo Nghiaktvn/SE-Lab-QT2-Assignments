@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Dashboard loaded SQL data",
+    "\u25A6  Items \u0026 inventory navigation",
+    "\u25C9  Agent partners navigation",
+    "\u25A4  Incoming orders navigation",
+    "\u2197  Sales dashboard navigation",
+    "Pause and resume animation buttons",
+    "\u2726 AI guide opens Northstar \u00B7 Local AI guide",
+    "Sunset color selection",
+    "Refresh button reloads SQL data",
+    "Product search filter",
+    "\u002B Add product opens Add product",
+    "Edit product opens Edit product",
+    "Adjust stock opens Adjust stock",
+    "\u002B Register agent opens Register agent \u0026 portal account",
+    "Edit company opens Edit agent company",
+    "Unlock account opens Unlock agent account",
+    "Order status filter",
+    "Order details opens Order #55 / Shipping manifest",
+    "Apply dashboard filters button",
+    "Deactivate control present; business path checked by SQL harness",
+    "Advance status \u2192 control present; business path checked by SQL harness",
+    "Cancel \u0026 restore stock control present; business path checked by SQL harness",
+    "Export manifest / PDF control present; business path checked by SQL harness",
+    "Sign out button closes Admin workspace"
+  ]
+}

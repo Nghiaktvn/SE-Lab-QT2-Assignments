@@ -1,0 +1,47 @@
+PASS: Newly registered agent can sign in to portal
+PASS: Agent role cannot access desktop Admin
+PASS: Duplicate account rolls back agent registration
+PASS: Failed registration leaves no orphan company
+PASS: Master-detail invoice uses server prices and totals
+PASS: Invoice carries the registered delivery contact for print
+PASS: Master-detail order deducts all stocks
+PASS: Foreign-agent invoice is inaccessible
+PASS: My Orders filters by authenticated agent
+PASS: Replayed request key returns existing order
+PASS: Replayed request does not deduct stock twice
+PASS: One-product cart creates an unpaid invoice with the server price
+PASS: Another agent cannot confirm payment for this invoice
+PASS: Rejected foreign payment leaves invoice unpaid
+PASS: Demo payment returns a unique classroom reference
+PASS: Confirmed one-product invoice is persisted as paid with timestamp and reference
+PASS: Retrying payment confirmation returns the original reference without duplicate payment
+PASS: My Orders displays the confirmed payment state
+PASS: Stale product editor cannot overwrite stock after web order
+PASS: Insufficient stock rejects multi-line order
+PASS: Insufficient-stock rejection leaves no order or stock change
+PASS: Controlled second-detail failure exercises database rollback
+PASS: Mid-transaction failure rolls back header, first detail, and stock deduction
+PASS: Cancelling a paid classroom order records a refund on its invoice
+PASS: Cancelling a paid order restores its reserved stock exactly once
+PASS: Cancellation atomically restores every reserved quantity
+PASS: Repeated cancellation cannot restore stock twice
+PASS: Repeated cancellation leaves restored stock unchanged
+PASS: Shipped orders cannot be cancelled
+PASS: Exported shipping manifest contains address, totals, and print stylesheet
+PASS: Date and agent filters report shipped revenue only
+PASS: Concurrent checkouts for last unit allow exactly one order
+PASS: Agent account locks on fifth incorrect password
+PASS: Admin unlock restores Agent access
+PASS: Deactivated agent invalidates existing portal session
+PASS: Deactivated agent cannot place an order
+PASS: Admin role can sign in with PBKDF2 password
+PASS: Admin role cannot sign in to Agent portal
+PASS: Desktop Admin locks on fifth incorrect password
+PASS: Inventory adjustment adds requested quantity
+PASS: Inventory adjustment cannot make stock negative
+PASS: Current-version product edit persists successfully
+PASS: Chrome completes two-product checkout, demo payment, My Orders, printable invoice, and mobile layout
+PASS: Company edit persists through Admin store
+PASS: Product deactivation hides the item without deleting its row
+PASS: Fixture cleanup restores all five table row counts
+TOTAL: 46 passed. Baseline/final Agent/Item/Order/Detail/Users = 15/15/19/22/16 / 15/15/19/22/16

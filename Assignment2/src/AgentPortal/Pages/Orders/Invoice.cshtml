@@ -1,0 +1,27 @@
+@page "/orders/{id:int}/invoice"
+@model AgentPortal.Pages.Orders.InvoiceModel
+@{ ViewData["Title"] = "Invoice"; }
+<div class="invoice-actions screen-only"><a class="text-link" asp-page="/Orders/Index">← Back to my orders</a><button class="primary" type="button" onclick="window.print()">▤ Print invoice / Save PDF</button></div>
+@if (TempData["OrderPlaced"] is string message) { <div class="success screen-only" role="status">✓ @message</div> }
+@if (TempData["PaymentConfirmed"] is string paymentMessage) { <div class="success screen-only" role="status">✓ @paymentMessage</div> }
+@if (TempData["PaymentError"] is string paymentError) { <div class="alert screen-only" role="alert">@paymentError</div> }
+<article class="card invoice">
+<div class="invoice-top"><div class="brand rainbow-brand invoice-brand">NORTHSTAR</div><p>ORDER INVOICE<br /><strong>#@Model.Invoice!.Id.ToString("D5")</strong></p></div>
+<div class="invoice-meta"><div><p class="eyebrow">PREPARED FOR</p><h2>@Model.Invoice.AgentName</h2><p class="invoice-contact">@Model.Invoice.AgentAddress<br />@Model.Invoice.AgentPhone</p></div><dl><div><dt>Issue date</dt><dd>@DateTime.SpecifyKind(Model.Invoice.Date, DateTimeKind.Utc).ToLocalTime().ToString("dd MMM yyyy HH:mm")</dd></div><div><dt>Order status</dt><dd><span class="badge badge-@Model.Invoice.Status.ToLowerInvariant()">@Model.Invoice.Status</span></dd></div><div><dt>Payment</dt><dd><span class="badge badge-@Model.Invoice.PaymentStatus.ToLowerInvariant()">@Model.Invoice.PaymentStatus @(Model.Invoice.PaymentStatus == "Paid" ? "· demo" : "")</span></dd></div><div><dt>Currency</dt><dd>Vietnamese Dong (VND)</dd></div>@if (Model.Invoice.PaidAtUtc is DateTime paidAt) { <div><dt>Paid at</dt><dd>@DateTime.SpecifyKind(paidAt, DateTimeKind.Utc).ToLocalTime().ToString("dd MMM yyyy HH:mm")</dd></div> }@if (!string.IsNullOrEmpty(Model.Invoice.PaymentReference)) { <div><dt>Demo payment reference</dt><dd class="invoice-reference">@Model.Invoice.PaymentReference</dd></div> }</dl></div>
+<div class="table-scroll"><table><thead><tr><th>Product description</th><th>Quantity</th><th>Unit price</th><th>Line amount</th></tr></thead><tbody>
+@foreach (var line in Model.Invoice.Lines) { <tr><td data-label="Product"><strong>@line.ItemName</strong></td><td data-label="Quantity">@line.Quantity</td><td data-label="Unit price">@line.UnitAmount.ToString("N0") VND</td><td data-label="Line amount" class="money">@((line.Quantity * line.UnitAmount).ToString("N0")) VND</td></tr> }
+</tbody><tfoot><tr><th colspan="3">Total order amount</th><th>@Model.Invoice.Total.ToString("N0") VND</th></tr></tfoot></table></div>
+@if (Model.Invoice.PaymentStatus == "Unpaid" && Model.Invoice.Status != "Cancelled")
+{
+<section class="payment-panel screen-only"><div><p class="eyebrow">CLASSROOM PAYMENT · STEP 2</p><h3>Confirm payment received</h3><p>Print or save the invoice above for your records, then confirm the classroom payment here. No card, bank account, or real money is used.</p></div><form method="post" data-payment-form asp-page-handler="ConfirmDemoPayment" asp-route-id="@Model.Invoice.Id"><input type="hidden" name="paymentRequestKey" value="@Model.PaymentRequestKey" /><button class="primary" type="submit">✓ Confirm payment · @Model.Invoice.Total.ToString("N0") VND</button></form></section>
+}
+else if (Model.Invoice.PaymentStatus == "Paid")
+{
+<section class="payment-panel paid screen-only" role="status"><div><p class="eyebrow">PAYMENT CONFIRMED</p><h3>Invoice paid successfully.</h3><p>Classroom simulation only · No real funds moved.</p></div><span class="payment-reference">Reference<br /><strong>@Model.Invoice.PaymentReference</strong></span></section>
+}
+else if (Model.Invoice.PaymentStatus == "Refunded")
+{
+<section class="payment-panel refunded screen-only" role="status"><div><p class="eyebrow">DEMO REFUND RECORDED</p><h3>This invoice has been refunded.</h3><p>Classroom simulation only · No real funds moved.</p></div><span class="payment-reference">Reference<br /><strong>@Model.Invoice.PaymentReference</strong></span></section>
+}
+<div class="invoice-bottom"><div><h3>Thank you for your business.</h3><p>Keep this document for your records.<br />Contact the warehouse for dispatch information.</p></div><span>Classroom payment simulator<br />No real payment is processed</span></div>
+</article>

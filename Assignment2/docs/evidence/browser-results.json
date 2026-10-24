@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-23",
+  "checks": [
+    {
+      "name": "15 SQL products in catalog",
+      "status": "PASS"
+    },
+    {
+      "name": "Coffee and tea category returns four products",
+      "status": "PASS"
+    },
+    {
+      "name": "Live two-line cart total",
+      "status": "PASS"
+    },
+    {
+      "name": "Successful browser order redirects to two-line invoice",
+      "status": "PASS"
+    },
+    {
+      "name": "My Orders includes browser-created order",
+      "status": "PASS"
+    },
+    {
+      "name": "List view switches without losing product inputs",
+      "status": "PASS"
+    },
+    {
+      "name": "Product text search returns Cashew Nuts",
+      "status": "PASS"
+    },
+    {
+      "name": "304px mobile document has no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "Nova recommends real in-stock products under Vietnamese budget query",
+      "status": "PASS"
+    },
+    {
+      "name": "Nova order-status answer is scoped to signed-in agent",
+      "status": "PASS"
+    },
+    {
+      "name": "User can switch Lilac color palette",
+      "status": "PASS"
+    },
+    {
+      "name": "Category selection retained after login",
+      "status": "PASS"
+    },
+    {
+      "name": "Escape clears search without changing chosen category",
+      "status": "PASS"
+    },
+    {
+      "name": "Selected category exposes aria-pressed state",
+      "status": "PASS"
+    },
+    {
+      "name": "Two-line invoice #23 shows an enabled classroom payment confirmation",
+      "status": "PASS"
+    },
+    {
+      "name": "Payment confirmation returns Paid state, timestamp and unique DEMO reference",
+      "status": "PASS"
+    },
+    {
+      "name": "Narrow invoice shows both products, unit prices, line amounts and total",
+      "status": "PASS"
+    },
+    {
+      "name": "Desktop invoice retains four-column table and payment result",
+      "status": "PASS"
+    }
+  ]
+}

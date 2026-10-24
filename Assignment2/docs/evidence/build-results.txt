@@ -1,0 +1,11 @@
+  Wholesale.Domain -> C:\SE_LAB1_2\Assignment2\src\Wholesale.Domain\bin\Debug\net10.0\Wholesale.Domain.dll
+  AgentPortal -> C:\SE_LAB1_2\Assignment2\src\AgentPortal\bin\Debug\net10.0\AgentPortal.dll
+  Wholesale.AdminWinForms -> C:\SE_LAB1_2\Assignment2\src\Wholesale.AdminWinForms\bin\Debug\net10.0-windows\Wholesale.AdminWinForms.dll
+  Wholesale.Tests -> C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll
+  Wholesale.IntegrationTests -> C:\SE_LAB1_2\Assignment2\tests\Wholesale.IntegrationTests\bin\Debug\net10.0-windows\Wholesale.IntegrationTests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:08.01

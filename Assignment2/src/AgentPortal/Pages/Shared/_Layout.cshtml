@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#183638" />
+  <title>@ViewData["Title"] | Northstar Wholesale</title>
+  <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/css/experience.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/css/identity.css" asp-append-version="true" />
+</head>
+<body class="@(ViewData["Title"]?.ToString()=="Invoice" ? "invoice-page" : "")">
+  <div class="announcement">✦ GOOD THINGS ARE ON THE WAY <span>Thoughtful essentials. Connected wholesale.</span></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand rainbow-brand" asp-page="/Index" aria-label="Northstar home">NORTHSTAR</a>
+    <nav aria-label="Main navigation">
+      <a class="@(ViewData["Title"]?.ToString()=="Home"?"active":"")" asp-page="/Index">Home</a>
+      <a class="@(ViewData["Title"]?.ToString()=="Catalog"?"active":"")" asp-page="/Catalog">The collection</a>
+      <a class="@(ViewData["Title"]?.ToString()=="About"?"active":"")" asp-page="/About">About</a>
+      <a class="@(ViewData["Title"]?.ToString()=="Help"?"active":"")" asp-page="/Help">Help</a>
+      @if(Context.Session.GetString("role")=="Agent"){
+        <a class="@(ViewData["Title"]?.ToString()=="My orders"?"active":"")" asp-page="/Orders/Index">My orders</a>
+      }
+    </nav>
+    @if(Context.Session.GetString("role")=="Agent"){
+      <div class="account">
+        <span class="avatar" aria-hidden="true">N</span>
+        <span>@Context.Session.GetString("user")<small>Agent account</small></span>
+        <form method="post" asp-page="/Login" asp-page-handler="Logout">
+          <button class="text-button" aria-label="Sign out">Sign out ↗</button>
+        </form>
+      </div>
+    } else {
+      <a class="primary small-button" asp-page="/Login">Partner sign in ↗</a>
+    }
+  </header>
+  <main id="main" class="container">@RenderBody()</main>
+  <footer class="site-footer screen-only">
+    <div class="footer-story">
+      <a class="brand rainbow-brand" asp-page="/Index">NORTHSTAR</a>
+      <p>A little goodness.<br />A lot of possibilities.</p>
+    </div>
+    <div>
+      <h2>Explore</h2>
+      <a asp-page="/Catalog">The collection</a>
+      <a asp-page="/About">Our story</a>
+      <a href="/#how-it-works">How it works</a>
+    </div>
+    <div>
+      <h2>Here to help</h2>
+      <a asp-page="/Help">Help & FAQs</a>
+      <a asp-page="/Orders/Index">Track my orders</a>
+      <button type="button" data-open-assistant>Meet Nova ↗</button>
+    </div>
+    <div>
+      <h2>Your workspace</h2>
+      <a asp-page="/Login">Partner sign in</a>
+      <p>All prices in VND<br />Classroom demonstration</p>
+    </div>
+    <div class="footer-bottom">
+      Better stocked. Better connected.
+      <span>Northstar · Everyday essentials, together.</span>
+    </div>
+  </footer>
+
+  <aside class="assistant-widget screen-only" aria-label="Nova AI 3D Guide">
+    <div class="assistant-speech-bubble" id="assistant-bubble" aria-hidden="true">
+      <span>Hi! I'm Nova ✦ Ask about products or orders</span>
+    </div>
+    <button class="assistant-launcher" type="button" id="open-assistant" data-open-assistant aria-label="Ask Nova 3D assistant" aria-haspopup="dialog" aria-controls="nova-assistant">
+      <div class="launcher-mascot-wrapper">
+        <img class="launcher-art" src="/media/nova-3d-avatar.webp" alt="Nova 3D cartoon avatar" width="90" height="100" />
+        <span class="mascot-badge" aria-hidden="true">3D AI</span>
+      </div>
+      <span class="launcher-label">Ask Nova <b>✦</b></span>
+    </button>
+  </aside>
+
+  <dialog id="nova-assistant" class="assistant-dialog" aria-labelledby="nova-title">
+    <div class="assistant-head">
+      <div class="assistant-head-info">
+        <span class="nova-online"><i class="status-pulse"></i> 3D AI COMPANION · ACTIVE</span>
+        <strong id="nova-title">Hello, I'm Nova.</strong>
+        <small>3D animated guide · Ready to find everyday essentials.</small>
+      </div>
+      <div class="assistant-head-mascot">
+        <div class="mascot-halo" aria-hidden="true"></div>
+        <img class="assistant-character" src="/media/nova-3d-v2.webp" alt="Nova 3D Character waving" width="130" height="145" />
+      </div>
+      <button type="button" id="close-assistant" aria-label="Close assistant">×</button>
+    </div>
+    <div id="assistant-messages" class="assistant-messages" aria-live="polite">
+      <p class="bot-message">Hi! Let's find something good. Ask about products, stock or your orders — try “cà phê dưới 250k” or “gạo thơm”.</p>
+    </div>
+    <div class="assistant-typing" id="assistant-typing" hidden role="status">
+      <span class="typing-mascot-mini" aria-hidden="true">✦</span> Nova is finding your next good thing <span class="typing-dots" aria-hidden="true">•••</span>
+    </div>
+    <div class="assistant-suggestions">
+      <button type="button" data-assistant-prompt="coffee under 250k">☕ Coffee under 250k</button>
+      <button type="button" data-assistant-prompt="my order status">▤ My orders</button>
+      <button type="button" data-assistant-prompt="low stock">✦ Low stock</button>
+      <button type="button" data-assistant-prompt="pantry essentials">🌾 Pantry</button>
+    </div>
+    <form id="assistant-form" method="post" asp-page="/Assistant">
+      <label class="sr-only" for="assistant-question">Your question</label>
+      <input id="assistant-question" name="Question" maxlength="300" placeholder="What are you looking for?" required autocomplete="off" />
+      <button type="submit" aria-label="Send question">↑</button>
+    </form>
+    <p class="assistant-note">Local 3D AI assistant · You confirm every order.</p>
+  </dialog>
+
+  <div class="palette-control screen-only">
+    <button id="toggle-all-motion" class="text-button" type="button" aria-pressed="true">Pause effects</button>
+    <label for="color-palette">Color theme</label>
+    <select id="color-palette" aria-label="Color theme">
+      <option value="forest">Forest</option>
+      <option value="sunset">Sunset</option>
+      <option value="lilac">Lilac</option>
+    </select>
+  </div>
+  <script src="~/js/site.js" asp-append-version="true" defer></script>
+</body>
+</html>

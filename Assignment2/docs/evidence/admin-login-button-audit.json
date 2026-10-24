@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Show password checkbox",
+    "Hide password checkbox",
+    "Admin sign-in button authenticated SQL account"
+  ]
+}

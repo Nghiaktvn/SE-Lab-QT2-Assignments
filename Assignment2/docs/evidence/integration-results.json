@@ -1,0 +1,192 @@
+{
+  "date": "2026-10-24T09:57:31.8134175+07:00",
+  "passed": 46,
+  "baseline": "15/15/19/22/16",
+  "final": "15/15/19/22/16",
+  "checks": [
+    {
+      "title": "Newly registered agent can sign in to portal",
+      "status": "PASS"
+    },
+    {
+      "title": "Agent role cannot access desktop Admin",
+      "status": "PASS"
+    },
+    {
+      "title": "Duplicate account rolls back agent registration",
+      "status": "PASS"
+    },
+    {
+      "title": "Failed registration leaves no orphan company",
+      "status": "PASS"
+    },
+    {
+      "title": "Master-detail invoice uses server prices and totals",
+      "status": "PASS"
+    },
+    {
+      "title": "Invoice carries the registered delivery contact for print",
+      "status": "PASS"
+    },
+    {
+      "title": "Master-detail order deducts all stocks",
+      "status": "PASS"
+    },
+    {
+      "title": "Foreign-agent invoice is inaccessible",
+      "status": "PASS"
+    },
+    {
+      "title": "My Orders filters by authenticated agent",
+      "status": "PASS"
+    },
+    {
+      "title": "Replayed request key returns existing order",
+      "status": "PASS"
+    },
+    {
+      "title": "Replayed request does not deduct stock twice",
+      "status": "PASS"
+    },
+    {
+      "title": "One-product cart creates an unpaid invoice with the server price",
+      "status": "PASS"
+    },
+    {
+      "title": "Another agent cannot confirm payment for this invoice",
+      "status": "PASS"
+    },
+    {
+      "title": "Rejected foreign payment leaves invoice unpaid",
+      "status": "PASS"
+    },
+    {
+      "title": "Demo payment returns a unique classroom reference",
+      "status": "PASS"
+    },
+    {
+      "title": "Confirmed one-product invoice is persisted as paid with timestamp and reference",
+      "status": "PASS"
+    },
+    {
+      "title": "Retrying payment confirmation returns the original reference without duplicate payment",
+      "status": "PASS"
+    },
+    {
+      "title": "My Orders displays the confirmed payment state",
+      "status": "PASS"
+    },
+    {
+      "title": "Stale product editor cannot overwrite stock after web order",
+      "status": "PASS"
+    },
+    {
+      "title": "Insufficient stock rejects multi-line order",
+      "status": "PASS"
+    },
+    {
+      "title": "Insufficient-stock rejection leaves no order or stock change",
+      "status": "PASS"
+    },
+    {
+      "title": "Controlled second-detail failure exercises database rollback",
+      "status": "PASS"
+    },
+    {
+      "title": "Mid-transaction failure rolls back header, first detail, and stock deduction",
+      "status": "PASS"
+    },
+    {
+      "title": "Cancelling a paid classroom order records a refund on its invoice",
+      "status": "PASS"
+    },
+    {
+      "title": "Cancelling a paid order restores its reserved stock exactly once",
+      "status": "PASS"
+    },
+    {
+      "title": "Cancellation atomically restores every reserved quantity",
+      "status": "PASS"
+    },
+    {
+      "title": "Repeated cancellation cannot restore stock twice",
+      "status": "PASS"
+    },
+    {
+      "title": "Repeated cancellation leaves restored stock unchanged",
+      "status": "PASS"
+    },
+    {
+      "title": "Shipped orders cannot be cancelled",
+      "status": "PASS"
+    },
+    {
+      "title": "Exported shipping manifest contains address, totals, and print stylesheet",
+      "status": "PASS"
+    },
+    {
+      "title": "Date and agent filters report shipped revenue only",
+      "status": "PASS"
+    },
+    {
+      "title": "Concurrent checkouts for last unit allow exactly one order",
+      "status": "PASS"
+    },
+    {
+      "title": "Agent account locks on fifth incorrect password",
+      "status": "PASS"
+    },
+    {
+      "title": "Admin unlock restores Agent access",
+      "status": "PASS"
+    },
+    {
+      "title": "Deactivated agent invalidates existing portal session",
+      "status": "PASS"
+    },
+    {
+      "title": "Deactivated agent cannot place an order",
+      "status": "PASS"
+    },
+    {
+      "title": "Admin role can sign in with PBKDF2 password",
+      "status": "PASS"
+    },
+    {
+      "title": "Admin role cannot sign in to Agent portal",
+      "status": "PASS"
+    },
+    {
+      "title": "Desktop Admin locks on fifth incorrect password",
+      "status": "PASS"
+    },
+    {
+      "title": "Inventory adjustment adds requested quantity",
+      "status": "PASS"
+    },
+    {
+      "title": "Inventory adjustment cannot make stock negative",
+      "status": "PASS"
+    },
+    {
+      "title": "Current-version product edit persists successfully",
+      "status": "PASS"
+    },
+    {
+      "title": "Chrome completes two-product checkout, demo payment, My Orders, printable invoice, and mobile layout",
+      "status": "PASS"
+    },
+    {
+      "title": "Company edit persists through Admin store",
+      "status": "PASS"
+    },
+    {
+      "title": "Product deactivation hides the item without deleting its row",
+      "status": "PASS"
+    },
+    {
+      "title": "Fixture cleanup restores all five table row counts",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# Nova 3D — October 23 visual update
+
+Mode: built-in imagegen, transparent background. Workspace asset: `Assignment2/src/AgentPortal/wwwroot/media/nova-3d-v2.png`. The generated bitmap retains its actual source dimensions; a 4K video export is a composition, not a claim of native 4K detail in this bitmap.
+
+Prompt: Use case: stylized-concept. Asset type: transparent 3D mascot for Northstar wholesale web assistant. Create Nova, an original cute mint-green delivery robot with a rounded cream face, warm expressive dark eyes and smile, tiny golden four-point star antenna, small terracotta satchel and a little grocery box with a leaf symbol. Full body, three-quarter view, one hand waving hello, other holding grocery box, centered isolated single character, generous margin, polished premium family-animation 3D rendering, realistic soft silicone and ceramic textures, crisp edges and tiny material detail, soft studio lighting. Palette sage mint, cream, peach, golden yellow and subtle lilac. No text, no letters, no watermark, no border, no scene, genuinely transparent background. Aim for extremely sharp 4K-quality detail, highest supported resolution. Friendly sophisticated website character that remains legible as small avatar.
+
+Reference: MilkyBloom navigation (Home, Shop, About, Contact), story and support organization. Northstar retains original artwork, copy, product domain and implementation. No third-party brand assets copied.

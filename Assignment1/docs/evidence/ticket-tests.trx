@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="9c2159bb-9777-4bb5-84bf-19e8db41ed56" name="ADMIN@DESKTOP-E1UAMT7 2026-10-23 16:15:17" runUser="DESKTOP-E1UAMT7\ADMIN" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-23T16:15:17.4912181+07:00" queuing="2026-10-23T16:15:17.4912190+07:00" start="2026-10-23T16:15:16.7345821+07:00" finish="2026-10-23T16:15:17.5275504+07:00" />
+  <TestSettings name="default" id="851aa02a-0f0e-4e37-8dbe-9116201709dd">
+    <Deployment runDeploymentRoot="ADMIN_DESKTOP-E1UAMT7_2026-10-23_16_15_17" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="52fed5c4-882b-472a-ad3b-699a2ae63a44" testId="65eccda3-0b7b-fcde-75a2-59e7af2e4c1a" testName="DuplicateCallbackIsIdempotent" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0004053" startTime="2026-10-23T16:15:17.4458909+07:00" endTime="2026-10-23T16:15:17.4463519+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52fed5c4-882b-472a-ad3b-699a2ae63a44" />
+    <UnitTestResult executionId="58aab60c-4422-48d6-a39e-1b7d4d90e7ea" testId="9ee4d6a4-6d3b-9433-b98e-9ba57d7de107" testName="UnderstandsVietnameseWithoutAccentMismatch" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0178816" startTime="2026-10-23T16:15:17.3742499+07:00" endTime="2026-10-23T16:15:17.4082117+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="58aab60c-4422-48d6-a39e-1b7d4d90e7ea" />
+    <UnitTestResult executionId="122985ec-d33a-4617-b982-38a25197f627" testId="59210607-d5e4-36b9-de55-d7945a107f9d" testName="VietnameseProductRecommendationUsesRealPrice" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0006776" startTime="2026-10-23T16:15:17.4182861+07:00" endTime="2026-10-23T16:15:17.4193861+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="122985ec-d33a-4617-b982-38a25197f627" />
+    <UnitTestResult executionId="95dd5c4e-f82a-4dfd-b84c-430e6c5625b5" testId="34cbeddd-990a-b996-1c4e-aa254e248fe4" testName="UnknownPaymentCannotBeSilentlyCancelled" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0001094" startTime="2026-10-23T16:15:17.4474199+07:00" endTime="2026-10-23T16:15:17.4475626+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="95dd5c4e-f82a-4dfd-b84c-430e6c5625b5" />
+    <UnitTestResult executionId="9725c995-c069-4a3b-a5b5-8d834bc092dd" testId="4eae688f-02f7-df4b-0f78-1876bceca303" testName="TimeoutCannotIssueTicket" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0002212" startTime="2026-10-23T16:15:17.4466759+07:00" endTime="2026-10-23T16:15:17.4469420+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9725c995-c069-4a3b-a5b5-8d834bc092dd" />
+    <UnitTestResult executionId="fd58e813-389d-49de-ade9-548d0f853338" testId="b11240d6-678e-abf6-dcc9-5f19458f0ac8" testName="CannotIssueBeforeApproval" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0014667" startTime="2026-10-23T16:15:17.4435999+07:00" endTime="2026-10-23T16:15:17.4451560+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd58e813-389d-49de-ade9-548d0f853338" />
+    <UnitTestResult executionId="cc686e66-1847-4074-8d03-6dd0264e27bc" testId="104b30a2-ab61-1e92-e466-57cf46d42226" testName="CancelledPaymentCannotBeCharged" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0001281" startTime="2026-10-23T16:15:17.4475782+07:00" endTime="2026-10-23T16:15:17.4477361+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc686e66-1847-4074-8d03-6dd0264e27bc" />
+    <UnitTestResult executionId="bf584eb4-3cc4-460a-9b38-fbf63b4ed663" testId="82e07c30-7981-2789-e2de-b925dc86087b" testName="DeclinedPaymentCannotIssueTicket" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0002246" startTime="2026-10-23T16:15:17.4471363+07:00" endTime="2026-10-23T16:15:17.4474015+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bf584eb4-3cc4-460a-9b38-fbf63b4ed663" />
+    <UnitTestResult executionId="397f4a76-934a-4a15-a07b-77368cef735f" testId="eadfe4bc-9002-d82e-36c5-924176473954" testName="RecommendationsRespectBudget" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0045296" startTime="2026-10-23T16:15:17.4129869+07:00" endTime="2026-10-23T16:15:17.4175598+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="397f4a76-934a-4a15-a07b-77368cef735f" />
+    <UnitTestResult executionId="b18330b8-7c14-4345-9c82-3a9a9c7232bf" testId="1981a5aa-050e-0e94-16d5-3a6d0686660f" testName="CannotBuyZeroFare" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0004421" startTime="2026-10-23T16:15:17.4221630+07:00" endTime="2026-10-23T16:15:17.4226996+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b18330b8-7c14-4345-9c82-3a9a9c7232bf" />
+    <UnitTestResult executionId="caff7eb0-ea52-45ec-8eed-f7bc96ed45b5" testId="ecc31eb1-79a1-339f-4fc3-93916a341d5e" testName="CannotBuyInactiveRoute" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0025951" startTime="2026-10-23T16:15:17.4194068+07:00" endTime="2026-10-23T16:15:17.4221135+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="caff7eb0-ea52-45ec-8eed-f7bc96ed45b5" />
+    <UnitTestResult executionId="77fce452-1dc0-471f-8448-5fb1ab91044a" testId="5c8d143a-8262-b422-c9ed-d343922825ad" testName="AnswersStockFromSuppliedKnowledge" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0003335" startTime="2026-10-23T16:15:17.4115443+07:00" endTime="2026-10-23T16:15:17.4123559+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="77fce452-1dc0-471f-8448-5fb1ab91044a" />
+    <UnitTestResult executionId="b4692523-999d-493d-94b7-b03b626e789c" testId="ed3b76f5-366b-7db8-4814-25af940f9d03" testName="UnknownQuestionDoesNotInventAnswer" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0001306" startTime="2026-10-23T16:15:17.4126073+07:00" endTime="2026-10-23T16:15:17.4127899+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b4692523-999d-493d-94b7-b03b626e789c" />
+    <UnitTestResult executionId="b3d69aca-f9ce-4756-be62-98fb8318c235" testId="826c897d-8828-203e-3da7-cad00163f6a8" testName="PrinterRecoveryRetainsTicketIdentity" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0003204" startTime="2026-10-23T16:15:17.4489269+07:00" endTime="2026-10-23T16:15:17.4493006+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b3d69aca-f9ce-4756-be62-98fb8318c235" />
+    <UnitTestResult executionId="e08ed27d-eb34-44d5-9b59-1a87f3ca1d3a" testId="08c64b1a-5dfe-27f9-fc73-fb1a3ab1639a" testName="EmptyQuestionReturnsSafeFallback" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0001195" startTime="2026-10-23T16:15:17.4128092+07:00" endTime="2026-10-23T16:15:17.4129640+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e08ed27d-eb34-44d5-9b59-1a87f3ca1d3a" />
+    <UnitTestResult executionId="ec8e8cde-7505-461d-81b2-8709520c2f91" testId="acaee122-d5d0-75c7-04fd-fdb4a289eacc" testName="NeverRecommendsUnavailableStock" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0006304" startTime="2026-10-23T16:15:17.4175806+07:00" endTime="2026-10-23T16:15:17.4182558+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ec8e8cde-7505-461d-81b2-8709520c2f91" />
+    <UnitTestResult executionId="53acba7a-7db5-489b-bc66-df8cb12c1ca3" testId="5f49fabc-83c5-8855-5e20-78f7b498b8ff" testName="TimeoutCanBeReconciled" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0001221" startTime="2026-10-23T16:15:17.4469641+07:00" endTime="2026-10-23T16:15:17.4471232+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="53acba7a-7db5-489b-bc66-df8cb12c1ca3" />
+    <UnitTestResult executionId="4d28ba66-4ad0-4bf4-be63-8153873ac3b2" testId="3e95767b-3f65-baa9-dac8-662b2a29dc45" testName="UniqueKeysAcrossKiosks" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0002776" startTime="2026-10-23T16:15:17.4495825+07:00" endTime="2026-10-23T16:15:17.4506295+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d28ba66-4ad0-4bf4-be63-8153873ac3b2" />
+    <UnitTestResult executionId="07a6b45c-796e-44fb-aefb-a31d9e267914" testId="8bb90f00-7b73-e93b-b882-6c2864940df1" testName="PrinterFailureCanBeRefunded" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0002133" startTime="2026-10-23T16:15:17.4493208+07:00" endTime="2026-10-23T16:15:17.4495698+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="07a6b45c-796e-44fb-aefb-a31d9e267914" />
+    <UnitTestResult executionId="ff8f8c13-d532-4459-80f2-d4ca0b7a7955" testId="5077a7a1-de51-dca1-c17c-c0a9cb6fea3d" testName="ConflictingCallbackIsRejected" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0002385" startTime="2026-10-23T16:15:17.4463762+07:00" endTime="2026-10-23T16:15:17.4466579+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff8f8c13-d532-4459-80f2-d4ca0b7a7955" />
+    <UnitTestResult executionId="972f19e6-50fb-4ed3-a2bc-d235194daf13" testId="4cc93f0d-a129-133e-e7a6-763ad95c5dac" testName="ApprovedPaymentIssuesOneTicket" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0006008" startTime="2026-10-23T16:15:17.4451971+07:00" endTime="2026-10-23T16:15:17.4458563+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="972f19e6-50fb-4ed3-a2bc-d235194daf13" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="CannotBuyInactiveRoute" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="ecc31eb1-79a1-339f-4fc3-93916a341d5e">
+      <Execution id="caff7eb0-ea52-45ec-8eed-f7bc96ed45b5" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.TicketTransactionTests" name="CannotBuyInactiveRoute" />
+    </UnitTest>
+    <UnitTest name="AnswersStockFromSuppliedKnowledge" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="5c8d143a-8262-b422-c9ed-d343922825ad">
+      <Execution id="77fce452-1dc0-471f-8448-5fb1ab91044a" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.AssistantTests" name="AnswersStockFromSuppliedKnowledge" />
+    </UnitTest>
+    <UnitTest name="DeclinedPaymentCannotIssueTicket" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="82e07c30-7981-2789-e2de-b925dc86087b">
+      <Execution id="bf584eb4-3cc4-460a-9b38-fbf63b4ed663" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.TicketTransactionTests" name="DeclinedPaymentCannotIssueTicket" />
+    </UnitTest>
+    <UnitTest name="ApprovedPaymentIssuesOneTicket" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="4cc93f0d-a129-133e-e7a6-763ad95c5dac">
+      <Execution id="972f19e6-50fb-4ed3-a2bc-d235194daf13" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.TicketTransactionTests" name="ApprovedPaymentIssuesOneTicket" />
+    </UnitTest>
+    <UnitTest name="EmptyQuestionReturnsSafeFallback" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="08c64b1a-5dfe-27f9-fc73-fb1a3ab1639a">
+      <Execution id="e08ed27d-eb34-44d5-9b59-1a87f3ca1d3a" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.AssistantTests" name="EmptyQuestionReturnsSafeFallback" />
+    </UnitTest>
+    <UnitTest name="PrinterRecoveryRetainsTicketIdentity" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="826c897d-8828-203e-3da7-cad00163f6a8">
+      <Execution id="b3d69aca-f9ce-4756-be62-98fb8318c235" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.TicketTransactionTests" name="PrinterRecoveryRetainsTicketIdentity" />
+    </UnitTest>
+    <UnitTest name="CancelledPaymentCannotBeCharged" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="104b30a2-ab61-1e92-e466-57cf46d42226">
+      <Execution id="cc686e66-1847-4074-8d03-6dd0264e27bc" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.TicketTransactionTests" name="CancelledPaymentCannotBeCharged" />
+    </UnitTest>
+    <UnitTest name="UnknownPaymentCannotBeSilentlyCancelled" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="34cbeddd-990a-b996-1c4e-aa254e248fe4">
+      <Execution id="95dd5c4e-f82a-4dfd-b84c-430e6c5625b5" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.TicketTransactionTests" name="UnknownPaymentCannotBeSilentlyCancelled" />
+    </UnitTest>
+    <UnitTest name="ConflictingCallbackIsRejected" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="5077a7a1-de51-dca1-c17c-c0a9cb6fea3d">
+      <Execution id="ff8f8c13-d532-4459-80f2-d4ca0b7a7955" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.TicketTransactionTests" name="ConflictingCallbackIsRejected" />
+    </UnitTest>
+    <UnitTest name="DuplicateCallbackIsIdempotent" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="65eccda3-0b7b-fcde-75a2-59e7af2e4c1a">
+      <Execution id="52fed5c4-882b-472a-ad3b-699a2ae63a44" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.TicketTransactionTests" name="DuplicateCallbackIsIdempotent" />
+    </UnitTest>
+    <UnitTest name="UnknownQuestionDoesNotInventAnswer" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="ed3b76f5-366b-7db8-4814-25af940f9d03">
+      <Execution id="b4692523-999d-493d-94b7-b03b626e789c" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.AssistantTests" name="UnknownQuestionDoesNotInventAnswer" />
+    </UnitTest>
+    <UnitTest name="VietnameseProductRecommendationUsesRealPrice" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="59210607-d5e4-36b9-de55-d7945a107f9d">
+      <Execution id="122985ec-d33a-4617-b982-38a25197f627" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.AssistantTests" name="VietnameseProductRecommendationUsesRealPrice" />
+    </UnitTest>
+    <UnitTest name="CannotBuyZeroFare" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="1981a5aa-050e-0e94-16d5-3a6d0686660f">
+      <Execution id="b18330b8-7c14-4345-9c82-3a9a9c7232bf" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.TicketTransactionTests" name="CannotBuyZeroFare" />
+    </UnitTest>
+    <UnitTest name="RecommendationsRespectBudget" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="eadfe4bc-9002-d82e-36c5-924176473954">
+      <Execution id="397f4a76-934a-4a15-a07b-77368cef735f" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.AssistantTests" name="RecommendationsRespectBudget" />
+    </UnitTest>
+    <UnitTest name="NeverRecommendsUnavailableStock" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="acaee122-d5d0-75c7-04fd-fdb4a289eacc">
+      <Execution id="ec8e8cde-7505-461d-81b2-8709520c2f91" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.AssistantTests" name="NeverRecommendsUnavailableStock" />
+    </UnitTest>
+    <UnitTest name="UniqueKeysAcrossKiosks" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="3e95767b-3f65-baa9-dac8-662b2a29dc45">
+      <Execution id="4d28ba66-4ad0-4bf4-be63-8153873ac3b2" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.TicketTransactionTests" name="UniqueKeysAcrossKiosks" />
+    </UnitTest>
+    <UnitTest name="PrinterFailureCanBeRefunded" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="8bb90f00-7b73-e93b-b882-6c2864940df1">
+      <Execution id="07a6b45c-796e-44fb-aefb-a31d9e267914" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.TicketTransactionTests" name="PrinterFailureCanBeRefunded" />
+    </UnitTest>
+    <UnitTest name="UnderstandsVietnameseWithoutAccentMismatch" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="9ee4d6a4-6d3b-9433-b98e-9ba57d7de107">
+      <Execution id="58aab60c-4422-48d6-a39e-1b7d4d90e7ea" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.AssistantTests" name="UnderstandsVietnameseWithoutAccentMismatch" />
+    </UnitTest>
+    <UnitTest name="TimeoutCanBeReconciled" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="5f49fabc-83c5-8855-5e20-78f7b498b8ff">
+      <Execution id="53acba7a-7db5-489b-bc66-df8cb12c1ca3" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.TicketTransactionTests" name="TimeoutCanBeReconciled" />
+    </UnitTest>
+    <UnitTest name="TimeoutCannotIssueTicket" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="4eae688f-02f7-df4b-0f78-1876bceca303">
+      <Execution id="9725c995-c069-4a3b-a5b5-8d834bc092dd" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.TicketTransactionTests" name="TimeoutCannotIssueTicket" />
+    </UnitTest>
+    <UnitTest name="CannotIssueBeforeApproval" storage="c:\se_lab1_2\assignment1\tests\smartticketing.tests\bin\debug\net10.0\smartticketing.tests.dll" id="b11240d6-678e-abf6-dcc9-5f19458f0ac8">
+      <Execution id="fd58e813-389d-49de-ade9-548d0f853338" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="SmartTicketing.Tests.TicketTransactionTests" name="CannotIssueBeforeApproval" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="65eccda3-0b7b-fcde-75a2-59e7af2e4c1a" executionId="52fed5c4-882b-472a-ad3b-699a2ae63a44" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9ee4d6a4-6d3b-9433-b98e-9ba57d7de107" executionId="58aab60c-4422-48d6-a39e-1b7d4d90e7ea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="59210607-d5e4-36b9-de55-d7945a107f9d" executionId="122985ec-d33a-4617-b982-38a25197f627" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="34cbeddd-990a-b996-1c4e-aa254e248fe4" executionId="95dd5c4e-f82a-4dfd-b84c-430e6c5625b5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4eae688f-02f7-df4b-0f78-1876bceca303" executionId="9725c995-c069-4a3b-a5b5-8d834bc092dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b11240d6-678e-abf6-dcc9-5f19458f0ac8" executionId="fd58e813-389d-49de-ade9-548d0f853338" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="104b30a2-ab61-1e92-e466-57cf46d42226" executionId="cc686e66-1847-4074-8d03-6dd0264e27bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="82e07c30-7981-2789-e2de-b925dc86087b" executionId="bf584eb4-3cc4-460a-9b38-fbf63b4ed663" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eadfe4bc-9002-d82e-36c5-924176473954" executionId="397f4a76-934a-4a15-a07b-77368cef735f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1981a5aa-050e-0e94-16d5-3a6d0686660f" executionId="b18330b8-7c14-4345-9c82-3a9a9c7232bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ecc31eb1-79a1-339f-4fc3-93916a341d5e" executionId="caff7eb0-ea52-45ec-8eed-f7bc96ed45b5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5c8d143a-8262-b422-c9ed-d343922825ad" executionId="77fce452-1dc0-471f-8448-5fb1ab91044a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ed3b76f5-366b-7db8-4814-25af940f9d03" executionId="b4692523-999d-493d-94b7-b03b626e789c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="826c897d-8828-203e-3da7-cad00163f6a8" executionId="b3d69aca-f9ce-4756-be62-98fb8318c235" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="08c64b1a-5dfe-27f9-fc73-fb1a3ab1639a" executionId="e08ed27d-eb34-44d5-9b59-1a87f3ca1d3a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="acaee122-d5d0-75c7-04fd-fdb4a289eacc" executionId="ec8e8cde-7505-461d-81b2-8709520c2f91" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5f49fabc-83c5-8855-5e20-78f7b498b8ff" executionId="53acba7a-7db5-489b-bc66-df8cb12c1ca3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3e95767b-3f65-baa9-dac8-662b2a29dc45" executionId="4d28ba66-4ad0-4bf4-be63-8153873ac3b2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8bb90f00-7b73-e93b-b882-6c2864940df1" executionId="07a6b45c-796e-44fb-aefb-a31d9e267914" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5077a7a1-de51-dca1-c17c-c0a9cb6fea3d" executionId="ff8f8c13-d532-4459-80f2-d4ca0b7a7955" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4cc93f0d-a129-133e-e7a6-763ad95c5dac" executionId="972f19e6-50fb-4ed3-a2bc-d235194daf13" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="21" executed="21" passed="21" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>

@@ -1,0 +1,5 @@
+Test run for C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+Results File: C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\TestResults\assignment2-final.trx
+
+Passed!  - Failed:     0, Passed:    26, Skipped:     0, Total:    26, Duration: 161 ms - Wholesale.Tests.dll (net10.0)

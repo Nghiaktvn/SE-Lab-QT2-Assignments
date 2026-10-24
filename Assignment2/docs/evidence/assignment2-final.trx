@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="1a5fc7e7-3914-4fe1-b59e-cb23f682f74b" name="ADMIN@DESKTOP-E1UAMT7 2026-10-23 14:51:09" runUser="DESKTOP-E1UAMT7\ADMIN" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-23T14:51:09.2134462+07:00" queuing="2026-10-23T14:51:09.2134464+07:00" start="2026-10-23T14:51:08.4985544+07:00" finish="2026-10-23T14:51:09.2973638+07:00" />
+  <TestSettings name="default" id="37f67f8d-0299-4b90-9b2a-11407caa1b6e">
+    <Deployment runDeploymentRoot="ADMIN_DESKTOP-E1UAMT7_2026-10-23_14_51_09" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="61a764ca-9a72-4e51-a399-d2271904c1ce" testId="0d1212eb-662f-4312-efab-724fbab08164" testName="WrongPasswordDoesNotMatch" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0274193" startTime="2026-10-23T14:51:09.1869425+07:00" endTime="2026-10-23T14:51:09.2144563+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="61a764ca-9a72-4e51-a399-d2271904c1ce" />
+    <UnitTestResult executionId="48af2ae9-2278-4208-b199-c615ad07e2d9" testId="71db98ac-09d2-c40f-bd76-9830dfb761bb" testName="RejectsEmptyHashPayload" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0000761" startTime="2026-10-23T14:51:09.2410338+07:00" endTime="2026-10-23T14:51:09.2411775+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="48af2ae9-2278-4208-b199-c615ad07e2d9" />
+    <UnitTestResult executionId="f7b73f70-e101-436c-a052-dd442c94866f" testId="06f5b762-abb2-2a3f-7bd2-651961f2c79d" testName="AllowsOnlyValidOrderTransitions" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0001062" startTime="2026-10-23T14:51:09.1543231+07:00" endTime="2026-10-23T14:51:09.1544600+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7b73f70-e101-436c-a052-dd442c94866f" />
+    <UnitTestResult executionId="fc2fbadf-9b3b-4aa4-99c4-887d9496f6ac" testId="6ae71162-826a-bfb2-d04e-288beb43b228" testName="VietnameseProductRecommendationUsesRealPrice" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0006404" startTime="2026-10-23T14:51:09.1248344+07:00" endTime="2026-10-23T14:51:09.1258393+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fc2fbadf-9b3b-4aa4-99c4-887d9496f6ac" />
+    <UnitTestResult executionId="d92b5832-78c3-4512-97d6-ffed91a7049c" testId="878139b7-2245-15bc-7463-2b29caf81e77" testName="AllowsExactStockAndBlocksOversell" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0004078" startTime="2026-10-23T14:51:09.1530613+07:00" endTime="2026-10-23T14:51:09.1535304+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d92b5832-78c3-4512-97d6-ffed91a7049c" />
+    <UnitTestResult executionId="51ae0865-1914-46bf-8af9-58429eb1aec9" testId="ff5e7e0b-a4a3-8b44-2f23-886cd0c3d3ab" testName="NeverRecommendsUnavailableStock" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0005729" startTime="2026-10-23T14:51:09.1242010+07:00" endTime="2026-10-23T14:51:09.1248140+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51ae0865-1914-46bf-8af9-58429eb1aec9" />
+    <UnitTestResult executionId="1e9111f2-18c9-43f3-880f-4fe4217b1774" testId="bf005bff-7278-7c7b-53be-33cca232e71c" testName="RejectsNegativePrice" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0002418" startTime="2026-10-23T14:51:09.1546221+07:00" endTime="2026-10-23T14:51:09.1548893+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1e9111f2-18c9-43f3-880f-4fe4217b1774" />
+    <UnitTestResult executionId="41b84fd2-ada0-4187-98e3-a6893d4f05f0" testId="f10b41d9-4a1e-4a2c-5fae-159014bdd00d" testName="CannotCancelShippedOrder" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0000365" startTime="2026-10-23T14:51:09.1544706+07:00" endTime="2026-10-23T14:51:09.1545340+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41b84fd2-ada0-4187-98e3-a6893d4f05f0" />
+    <UnitTestResult executionId="a6e8c804-a2ae-414f-94a6-e8775ad96db3" testId="5203cec6-2794-0300-7d1e-ab905a5531a4" testName="ZeroStockCannotBeDeducted" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0002051" startTime="2026-10-23T14:51:09.1561009+07:00" endTime="2026-10-23T14:51:09.1563657+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6e8c804-a2ae-414f-94a6-e8775ad96db3" />
+    <UnitTestResult executionId="1ee0799c-8df9-4bc8-9bc1-b097bc7e5b6c" testId="48f61932-730b-b4ac-d651-5442ea8c31dd" testName="UnknownQuestionDoesNotInventAnswer" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0001104" startTime="2026-10-23T14:51:09.1197286+07:00" endTime="2026-10-23T14:51:09.1198885+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1ee0799c-8df9-4bc8-9bc1-b097bc7e5b6c" />
+    <UnitTestResult executionId="b04ca2de-809e-4a03-945c-295fdffe9444" testId="b37c2f4f-9a08-442b-8752-b4b930c81849" testName="LocksAtFiveFailedAttempts" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0000776" startTime="2026-10-23T14:51:09.1541932+07:00" endTime="2026-10-23T14:51:09.1543112+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b04ca2de-809e-4a03-945c-295fdffe9444" />
+    <UnitTestResult executionId="764966db-4251-48b5-bd9d-f431718b1c9b" testId="40588b12-90b6-2133-4b8c-029516b62f8c" testName="RejectsEmptyOrder" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0011838" startTime="2026-10-23T14:51:09.1281108+07:00" endTime="2026-10-23T14:51:09.1293671+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="764966db-4251-48b5-bd9d-f431718b1c9b" />
+    <UnitTestResult executionId="f5cd3455-b3d9-4d59-8833-28b975fd6e27" testId="1f7c34f0-63c1-6157-4273-7f39de6ae046" testName="DeductsStockWithoutMutatingOriginal" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0002850" startTime="2026-10-23T14:51:09.1535533+07:00" endTime="2026-10-23T14:51:09.1538883+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f5cd3455-b3d9-4d59-8833-28b975fd6e27" />
+    <UnitTestResult executionId="560b146e-1217-41d0-b762-232c5a626bcb" testId="93e82b33-7a9c-32b8-419d-95f45d98d21c" testName="RejectsZeroQuantity" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0002384" startTime="2026-10-23T14:51:09.1527073+07:00" endTime="2026-10-23T14:51:09.1530243+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="560b146e-1217-41d0-b762-232c5a626bcb" />
+    <UnitTestResult executionId="899dbe92-97db-4548-aad0-aef43a164f2e" testId="3d4f17ae-8720-0391-f651-09676076f7b7" testName="AnswersStockFromSuppliedKnowledge" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0003112" startTime="2026-10-23T14:51:09.1187155+07:00" endTime="2026-10-23T14:51:09.1195015+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="899dbe92-97db-4548-aad0-aef43a164f2e" />
+    <UnitTestResult executionId="542e5cde-47b1-4a6b-834c-191f2779b278" testId="afa3fdb5-6cbf-c968-050a-3f770f75f099" testName="CorrectPasswordMatches" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0304143" startTime="2026-10-23T14:51:09.1563877+07:00" endTime="2026-10-23T14:51:09.1868934+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="542e5cde-47b1-4a6b-834c-191f2779b278" />
+    <UnitTestResult executionId="1070daab-79b8-4005-aa26-b29e262549f7" testId="36b114fa-ea72-dbc6-fa58-f375b96af4d6" testName="RejectsUnboundedIterations" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0000520" startTime="2026-10-23T14:51:09.2413746+07:00" endTime="2026-10-23T14:51:09.2414567+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1070daab-79b8-4005-aa26-b29e262549f7" />
+    <UnitTestResult executionId="e259af48-5e78-41a4-b936-169bd1cfbbe5" testId="57dc1384-a617-c311-6011-daf9c363395f" testName="RejectsShortPasswordAtCreation" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0002186" startTime="2026-10-23T14:51:09.2414671+07:00" endTime="2026-10-23T14:51:09.2424779+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e259af48-5e78-41a4-b936-169bd1cfbbe5" />
+    <UnitTestResult executionId="2ce57834-28f2-4c2a-ac3b-ae934f219146" testId="76e0ddfe-d26c-ff39-b8c6-41dc835d89c2" testName="CanCancelOnlyUnshippedOrders" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0000456" startTime="2026-10-23T14:51:09.1545418+07:00" endTime="2026-10-23T14:51:09.1546110+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ce57834-28f2-4c2a-ac3b-ae934f219146" />
+    <UnitTestResult executionId="c443a04f-71d7-4da8-ad6a-3ca67b220c2f" testId="1ad3a91f-29e8-044f-87bc-31c7fee63b22" testName="UnderstandsVietnameseWithoutAccentMismatch" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0171364" startTime="2026-10-23T14:51:09.0811554+07:00" endTime="2026-10-23T14:51:09.1152752+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c443a04f-71d7-4da8-ad6a-3ca67b220c2f" />
+    <UnitTestResult executionId="3e0789d4-fcce-4490-b8a2-fa3b17b10936" testId="cbefda50-633f-84f0-2d82-bac1e04e9897" testName="RecommendationsRespectBudget" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0040693" startTime="2026-10-23T14:51:09.1200665+07:00" endTime="2026-10-23T14:51:09.1241817+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e0789d4-fcce-4490-b8a2-fa3b17b10936" />
+    <UnitTestResult executionId="bb127f9f-d9b3-446d-9a39-f52af7211f21" testId="a545e3f6-b3b0-2715-e1fe-6db99e48fbdc" testName="RejectsMalformedBase64" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0001339" startTime="2026-10-23T14:51:09.2411922+07:00" endTime="2026-10-23T14:51:09.2413576+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bb127f9f-d9b3-446d-9a39-f52af7211f21" />
+    <UnitTestResult executionId="a4e82b6b-3de2-4775-89d9-41b3784f261c" testId="c5f23d80-3bf0-ab91-6128-f5872beccb78" testName="SaltMakesHashesUnique" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0263828" startTime="2026-10-23T14:51:09.2145019+07:00" endTime="2026-10-23T14:51:09.2409805+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a4e82b6b-3de2-4775-89d9-41b3784f261c" />
+    <UnitTestResult executionId="22794e7b-c2b3-440a-8ffb-f3d0f92f8cb0" testId="cc198c9d-6b2d-e644-4ef9-6bdb879589ed" testName="CalculatesMasterDetailTotal" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0021285" startTime="2026-10-23T14:51:09.1258577+07:00" endTime="2026-10-23T14:51:09.1280661+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="22794e7b-c2b3-440a-8ffb-f3d0f92f8cb0" />
+    <UnitTestResult executionId="7796d23a-0374-4607-a97a-82094f920a7b" testId="80331c0e-20f8-676b-a92f-c51ed7206d25" testName="EmptyQuestionReturnsSafeFallback" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0001133" startTime="2026-10-23T14:51:09.1199040+07:00" endTime="2026-10-23T14:51:09.1200482+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7796d23a-0374-4607-a97a-82094f920a7b" />
+    <UnitTestResult executionId="7855038a-d6ce-4f76-8bfe-38b7f56950fa" testId="fd5f0d50-b1dd-a410-8e51-7a8e1cc42901" testName="ThrowsWhenDeductionWouldGoNegative" computerName="DESKTOP-E1UAMT7" duration="00:00:00.0002245" startTime="2026-10-23T14:51:09.1539065+07:00" endTime="2026-10-23T14:51:09.1541753+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7855038a-d6ce-4f76-8bfe-38b7f56950fa" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="DeductsStockWithoutMutatingOriginal" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="1f7c34f0-63c1-6157-4273-7f39de6ae046">
+      <Execution id="f5cd3455-b3d9-4d59-8833-28b975fd6e27" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.OrderRulesTests" name="DeductsStockWithoutMutatingOriginal" />
+    </UnitTest>
+    <UnitTest name="AllowsExactStockAndBlocksOversell" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="878139b7-2245-15bc-7463-2b29caf81e77">
+      <Execution id="d92b5832-78c3-4512-97d6-ffed91a7049c" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.OrderRulesTests" name="AllowsExactStockAndBlocksOversell" />
+    </UnitTest>
+    <UnitTest name="CalculatesMasterDetailTotal" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="cc198c9d-6b2d-e644-4ef9-6bdb879589ed">
+      <Execution id="22794e7b-c2b3-440a-8ffb-f3d0f92f8cb0" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.OrderRulesTests" name="CalculatesMasterDetailTotal" />
+    </UnitTest>
+    <UnitTest name="CorrectPasswordMatches" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="afa3fdb5-6cbf-c968-050a-3f770f75f099">
+      <Execution id="542e5cde-47b1-4a6b-834c-191f2779b278" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.PasswordHashTests" name="CorrectPasswordMatches" />
+    </UnitTest>
+    <UnitTest name="RejectsZeroQuantity" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="93e82b33-7a9c-32b8-419d-95f45d98d21c">
+      <Execution id="560b146e-1217-41d0-b762-232c5a626bcb" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.OrderRulesTests" name="RejectsZeroQuantity" />
+    </UnitTest>
+    <UnitTest name="NeverRecommendsUnavailableStock" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="ff5e7e0b-a4a3-8b44-2f23-886cd0c3d3ab">
+      <Execution id="51ae0865-1914-46bf-8af9-58429eb1aec9" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.AssistantTests" name="NeverRecommendsUnavailableStock" />
+    </UnitTest>
+    <UnitTest name="RejectsEmptyOrder" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="40588b12-90b6-2133-4b8c-029516b62f8c">
+      <Execution id="764966db-4251-48b5-bd9d-f431718b1c9b" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.OrderRulesTests" name="RejectsEmptyOrder" />
+    </UnitTest>
+    <UnitTest name="RejectsEmptyHashPayload" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="71db98ac-09d2-c40f-bd76-9830dfb761bb">
+      <Execution id="48af2ae9-2278-4208-b199-c615ad07e2d9" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.PasswordHashTests" name="RejectsEmptyHashPayload" />
+    </UnitTest>
+    <UnitTest name="EmptyQuestionReturnsSafeFallback" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="80331c0e-20f8-676b-a92f-c51ed7206d25">
+      <Execution id="7796d23a-0374-4607-a97a-82094f920a7b" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.AssistantTests" name="EmptyQuestionReturnsSafeFallback" />
+    </UnitTest>
+    <UnitTest name="RecommendationsRespectBudget" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="cbefda50-633f-84f0-2d82-bac1e04e9897">
+      <Execution id="3e0789d4-fcce-4490-b8a2-fa3b17b10936" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.AssistantTests" name="RecommendationsRespectBudget" />
+    </UnitTest>
+    <UnitTest name="LocksAtFiveFailedAttempts" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="b37c2f4f-9a08-442b-8752-b4b930c81849">
+      <Execution id="b04ca2de-809e-4a03-945c-295fdffe9444" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.OrderRulesTests" name="LocksAtFiveFailedAttempts" />
+    </UnitTest>
+    <UnitTest name="CanCancelOnlyUnshippedOrders" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="76e0ddfe-d26c-ff39-b8c6-41dc835d89c2">
+      <Execution id="2ce57834-28f2-4c2a-ac3b-ae934f219146" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.OrderRulesTests" name="CanCancelOnlyUnshippedOrders" />
+    </UnitTest>
+    <UnitTest name="UnknownQuestionDoesNotInventAnswer" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="48f61932-730b-b4ac-d651-5442ea8c31dd">
+      <Execution id="1ee0799c-8df9-4bc8-9bc1-b097bc7e5b6c" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.AssistantTests" name="UnknownQuestionDoesNotInventAnswer" />
+    </UnitTest>
+    <UnitTest name="CannotCancelShippedOrder" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="f10b41d9-4a1e-4a2c-5fae-159014bdd00d">
+      <Execution id="41b84fd2-ada0-4187-98e3-a6893d4f05f0" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.OrderRulesTests" name="CannotCancelShippedOrder" />
+    </UnitTest>
+    <UnitTest name="SaltMakesHashesUnique" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="c5f23d80-3bf0-ab91-6128-f5872beccb78">
+      <Execution id="a4e82b6b-3de2-4775-89d9-41b3784f261c" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.PasswordHashTests" name="SaltMakesHashesUnique" />
+    </UnitTest>
+    <UnitTest name="RejectsNegativePrice" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="bf005bff-7278-7c7b-53be-33cca232e71c">
+      <Execution id="1e9111f2-18c9-43f3-880f-4fe4217b1774" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.OrderRulesTests" name="RejectsNegativePrice" />
+    </UnitTest>
+    <UnitTest name="RejectsShortPasswordAtCreation" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="57dc1384-a617-c311-6011-daf9c363395f">
+      <Execution id="e259af48-5e78-41a4-b936-169bd1cfbbe5" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.PasswordHashTests" name="RejectsShortPasswordAtCreation" />
+    </UnitTest>
+    <UnitTest name="VietnameseProductRecommendationUsesRealPrice" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="6ae71162-826a-bfb2-d04e-288beb43b228">
+      <Execution id="fc2fbadf-9b3b-4aa4-99c4-887d9496f6ac" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.AssistantTests" name="VietnameseProductRecommendationUsesRealPrice" />
+    </UnitTest>
+    <UnitTest name="RejectsMalformedBase64" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="a545e3f6-b3b0-2715-e1fe-6db99e48fbdc">
+      <Execution id="bb127f9f-d9b3-446d-9a39-f52af7211f21" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.PasswordHashTests" name="RejectsMalformedBase64" />
+    </UnitTest>
+    <UnitTest name="AllowsOnlyValidOrderTransitions" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="06f5b762-abb2-2a3f-7bd2-651961f2c79d">
+      <Execution id="f7b73f70-e101-436c-a052-dd442c94866f" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.OrderRulesTests" name="AllowsOnlyValidOrderTransitions" />
+    </UnitTest>
+    <UnitTest name="WrongPasswordDoesNotMatch" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="0d1212eb-662f-4312-efab-724fbab08164">
+      <Execution id="61a764ca-9a72-4e51-a399-d2271904c1ce" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.PasswordHashTests" name="WrongPasswordDoesNotMatch" />
+    </UnitTest>
+    <UnitTest name="RejectsUnboundedIterations" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="36b114fa-ea72-dbc6-fa58-f375b96af4d6">
+      <Execution id="1070daab-79b8-4005-aa26-b29e262549f7" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.PasswordHashTests" name="RejectsUnboundedIterations" />
+    </UnitTest>
+    <UnitTest name="ZeroStockCannotBeDeducted" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="5203cec6-2794-0300-7d1e-ab905a5531a4">
+      <Execution id="a6e8c804-a2ae-414f-94a6-e8775ad96db3" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.OrderRulesTests" name="ZeroStockCannotBeDeducted" />
+    </UnitTest>
+    <UnitTest name="AnswersStockFromSuppliedKnowledge" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="3d4f17ae-8720-0391-f651-09676076f7b7">
+      <Execution id="899dbe92-97db-4548-aad0-aef43a164f2e" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.AssistantTests" name="AnswersStockFromSuppliedKnowledge" />
+    </UnitTest>
+    <UnitTest name="UnderstandsVietnameseWithoutAccentMismatch" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="1ad3a91f-29e8-044f-87bc-31c7fee63b22">
+      <Execution id="c443a04f-71d7-4da8-ad6a-3ca67b220c2f" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.AssistantTests" name="UnderstandsVietnameseWithoutAccentMismatch" />
+    </UnitTest>
+    <UnitTest name="ThrowsWhenDeductionWouldGoNegative" storage="c:\se_lab1_2\assignment2\tests\wholesale.tests\bin\debug\net10.0\wholesale.tests.dll" id="fd5f0d50-b1dd-a410-8e51-7a8e1cc42901">
+      <Execution id="7855038a-d6ce-4f76-8bfe-38b7f56950fa" />
+      <TestMethod codeBase="C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Wholesale.Tests.OrderRulesTests" name="ThrowsWhenDeductionWouldGoNegative" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="0d1212eb-662f-4312-efab-724fbab08164" executionId="61a764ca-9a72-4e51-a399-d2271904c1ce" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="71db98ac-09d2-c40f-bd76-9830dfb761bb" executionId="48af2ae9-2278-4208-b199-c615ad07e2d9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="06f5b762-abb2-2a3f-7bd2-651961f2c79d" executionId="f7b73f70-e101-436c-a052-dd442c94866f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6ae71162-826a-bfb2-d04e-288beb43b228" executionId="fc2fbadf-9b3b-4aa4-99c4-887d9496f6ac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="878139b7-2245-15bc-7463-2b29caf81e77" executionId="d92b5832-78c3-4512-97d6-ffed91a7049c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ff5e7e0b-a4a3-8b44-2f23-886cd0c3d3ab" executionId="51ae0865-1914-46bf-8af9-58429eb1aec9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bf005bff-7278-7c7b-53be-33cca232e71c" executionId="1e9111f2-18c9-43f3-880f-4fe4217b1774" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f10b41d9-4a1e-4a2c-5fae-159014bdd00d" executionId="41b84fd2-ada0-4187-98e3-a6893d4f05f0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5203cec6-2794-0300-7d1e-ab905a5531a4" executionId="a6e8c804-a2ae-414f-94a6-e8775ad96db3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="48f61932-730b-b4ac-d651-5442ea8c31dd" executionId="1ee0799c-8df9-4bc8-9bc1-b097bc7e5b6c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b37c2f4f-9a08-442b-8752-b4b930c81849" executionId="b04ca2de-809e-4a03-945c-295fdffe9444" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="40588b12-90b6-2133-4b8c-029516b62f8c" executionId="764966db-4251-48b5-bd9d-f431718b1c9b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f7c34f0-63c1-6157-4273-7f39de6ae046" executionId="f5cd3455-b3d9-4d59-8833-28b975fd6e27" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="93e82b33-7a9c-32b8-419d-95f45d98d21c" executionId="560b146e-1217-41d0-b762-232c5a626bcb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3d4f17ae-8720-0391-f651-09676076f7b7" executionId="899dbe92-97db-4548-aad0-aef43a164f2e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="afa3fdb5-6cbf-c968-050a-3f770f75f099" executionId="542e5cde-47b1-4a6b-834c-191f2779b278" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="36b114fa-ea72-dbc6-fa58-f375b96af4d6" executionId="1070daab-79b8-4005-aa26-b29e262549f7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="57dc1384-a617-c311-6011-daf9c363395f" executionId="e259af48-5e78-41a4-b936-169bd1cfbbe5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="76e0ddfe-d26c-ff39-b8c6-41dc835d89c2" executionId="2ce57834-28f2-4c2a-ac3b-ae934f219146" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1ad3a91f-29e8-044f-87bc-31c7fee63b22" executionId="c443a04f-71d7-4da8-ad6a-3ca67b220c2f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cbefda50-633f-84f0-2d82-bac1e04e9897" executionId="3e0789d4-fcce-4490-b8a2-fa3b17b10936" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a545e3f6-b3b0-2715-e1fe-6db99e48fbdc" executionId="bb127f9f-d9b3-446d-9a39-f52af7211f21" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c5f23d80-3bf0-ab91-6128-f5872beccb78" executionId="a4e82b6b-3de2-4775-89d9-41b3784f261c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cc198c9d-6b2d-e644-4ef9-6bdb879589ed" executionId="22794e7b-c2b3-440a-8ffb-f3d0f92f8cb0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="80331c0e-20f8-676b-a92f-c51ed7206d25" executionId="7796d23a-0374-4607-a97a-82094f920a7b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd5f0d50-b1dd-a410-8e51-7a8e1cc42901" executionId="7855038a-d6ce-4f76-8bfe-38b7f56950fa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="26" executed="26" passed="26" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>

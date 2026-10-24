@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MetroGo 3D Smart Ticketing Kiosk — High Fidelity Wireframe</title>
+  <style>
+    :root {
+      --ink: #143e43;
+      --green: #24715d;
+      --bg: #fffaf3;
+      --peach: #fff4e6;
+      --lilac: #f2eafe;
+      --card: #ffffff;
+      --border: #e2ded4;
+      --accent: #e5b955;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--ink);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: radial-gradient(ellipse at 90% 10%, #f0e6fa 0%, transparent 40%), var(--bg);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .top-bar {
+      background: linear-gradient(110deg, #123438, #1a4f48);
+      color: white;
+      padding: 18px 4vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .brand {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-pill {
+      background: rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 4px 10px;
+      font-size: 10px;
+      letter-spacing: 0.08em;
+    }
+    .kiosk-status {
+      font-size: 12px;
+      color: #9fe2cb;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #4ef0ad;
+      box-shadow: 0 0 8px #4ef0ad;
+    }
+    .container {
+      max-width: 1180px;
+      width: 100%;
+      margin: 36px auto;
+      padding: 0 20px;
+      flex: 1;
+    }
+    /* Hero Banner */
+    .hero-banner {
+      background: linear-gradient(120deg, var(--peach), var(--lilac));
+      border: 2px solid #ecdcca;
+      border-radius: 26px;
+      padding: 30px 40px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 28px;
+      box-shadow: 0 14px 40px rgba(50,50,40,0.06);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-banner h1 {
+      font-size: 34px;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.8px;
+      margin-bottom: 8px;
+      color: var(--ink);
+    }
+    .hero-banner p {
+      color: #4b625b;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .hero-visual {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+    }
+    .hero-visual img {
+      max-height: 160px;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(20,50,40,0.15);
+      border: 3px solid #fff;
+      animation: float-train 6s ease-in-out infinite;
+    }
+    @keyframes float-train {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-7px); }
+    }
+    /* Kiosk Main Grid */
+    .kiosk-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 12px 35px rgba(20,50,45,0.06);
+    }
+    .eyebrow {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+    h2 {
+      font-size: 26px;
+      font-weight: 750;
+      letter-spacing: -0.5px;
+      margin-bottom: 20px;
+    }
+    .step-indicator {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 24px;
+      font-size: 11px;
+      font-weight: 700;
+      color: #7b8f84;
+    }
+    .step-indicator .active {
+      color: var(--green);
+      border-bottom: 2px solid var(--green);
+      padding-bottom: 3px;
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 750;
+      color: #617770;
+      letter-spacing: 0.08em;
+      margin: 18px 0 8px;
+      text-transform: uppercase;
+    }
+    .destination-list {
+      display: grid;
+      gap: 10px;
+    }
+    .dest-option {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 20px;
+      border: 1.5px solid #d5ded7;
+      border-radius: 14px;
+      background: #fafcfa;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .dest-option:hover {
+      border-color: var(--green);
+      background: #f2f8f4;
+      transform: translateY(-2px);
+    }
+    .dest-option.selected {
+      border-color: var(--green);
+      background: #eef6f1;
+      box-shadow: 0 4px 14px rgba(36,113,93,0.15);
+    }
+    .dest-name {
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .dest-fare {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--green);
+    }
+    .payment-methods {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .pay-btn {
+      padding: 14px 10px;
+      text-align: center;
+      border: 1.5px solid #d5ded7;
+      border-radius: 14px;
+      background: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .pay-btn:hover {
+      border-color: var(--green);
+    }
+    .pay-btn.selected {
+      border-color: var(--green);
+      background: #eef6f1;
+      color: var(--green);
+    }
+    .primary-btn {
+      width: 100%;
+      padding: 16px;
+      border-radius: 16px;
+      border: none;
+      background: linear-gradient(130deg, #24715d, #3c866a);
+      color: white;
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+      margin-top: 24px;
+      box-shadow: 0 8px 22px rgba(36,113,93,0.25);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .primary-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(36,113,93,0.32);
+    }
+    /* Ticket Receipt Side */
+    .receipt-card {
+      background: #f7f9f4;
+      border: 1px solid #dce4d9;
+      border-radius: 24px;
+      padding: 30px;
+      position: sticky;
+      top: 20px;
+    }
+    .receipt-paper {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+      border: 1px dashed #c0d1c5;
+      text-align: center;
+      animation: eject-ticket 0.6s ease-out;
+    }
+    @keyframes eject-ticket {
+      from { opacity: 0; transform: translateY(-15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .ticket-header {
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      color: var(--ink);
+      border-bottom: 2px solid #eef2ec;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+    .ticket-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0;
+      font-size: 13px;
+    }
+    .ticket-row span:first-child { color: #6b7f75; }
+    .ticket-row span:last-child { font-weight: 700; color: var(--ink); }
+    .ticket-total {
+      border-top: 1px solid #eef2ec;
+      padding-top: 10px;
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--green);
+    }
+    .ticket-barcode {
+      margin-top: 18px;
+      padding: 12px;
+      background: #f3f6f0;
+      border-radius: 8px;
+      font-family: monospace;
+      letter-spacing: 3px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .safe-note {
+      text-align: center;
+      font-size: 11px;
+      color: #7d9187;
+      margin-top: 16px;
+    }
+    @media (max-width: 850px) {
+      .hero-banner { grid-template-columns: 1fr; }
+      .hero-visual { display: none; }
+      .kiosk-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="brand">
+      <span>✳ METROGO</span>
+      <span class="brand-pill">SMART TICKETING KIOSK</span>
+    </div>
+    <div class="kiosk-status">
+      <span class="status-dot"></span> Kiosk Online · Safe Simulator
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="hero-banner">
+      <div>
+        <h1>A little ticket.<br>A big adventure.</h1>
+        <p>Pick a stop, choose your way to pay, and let the good journey begin. Designed with 3D clay-render aesthetics and responsive feedback.</p>
+      </div>
+      <div class="hero-visual">
+        <img src="../assets/metrogo-3d-hero.png" alt="MetroGo cheerful 3D train" />
+      </div>
+    </section>
+
+    <div class="kiosk-grid">
+      <section class="card">
+        <p class="eyebrow">TOUCHSCREEN WORKSPACE</p>
+        <h2>Where are you heading?</h2>
+
+        <div class="step-indicator">
+          <span class="active">01 ROUTE</span>
+          <span>→</span>
+          <span>02 PAYMENT</span>
+          <span>→</span>
+          <span>03 TICKET</span>
+        </div>
+
+        <div class="section-label">Select Destination</div>
+        <div class="destination-list">
+          <div class="dest-option selected" data-fare="7000" data-dest="Ben Thanh">
+            <span class="dest-name">◉ Ben Thanh Central</span>
+            <span class="dest-fare">7,000 VND</span>
+          </div>
+          <div class="dest-option" data-fare="12000" data-dest="Tan Cang Bridge">
+            <span class="dest-name">○ Tan Cang Station</span>
+            <span class="dest-fare">12,000 VND</span>
+          </div>
+          <div class="dest-option" data-fare="20000" data-dest="Suoi Tien Theme Park">
+            <span class="dest-name">○ Suoi Tien Terminal</span>
+            <span class="dest-fare">20,000 VND</span>
+          </div>
+        </div>
+
+        <div class="section-label">Select Payment Mode</div>
+        <div class="payment-methods">
+          <button class="pay-btn selected" type="button">💳 Card</button>
+          <button class="pay-btn" type="button">🏦 Bank QR</button>
+          <button class="pay-btn" type="button">📱 Wallet QR</button>
+        </div>
+
+        <button class="primary-btn" id="buy-btn" type="button">Simulate Payment & Issue Ticket →</button>
+        <p class="safe-note">Safe demo simulator · Meets Software Engineering Lab rubric requirements.</p>
+      </section>
+
+      <aside class="receipt-card">
+        <p class="eyebrow">JOURNEY PASS</p>
+        <div class="receipt-paper">
+          <div class="ticket-header">METROGO TRANSIT</div>
+          <div class="ticket-row">
+            <span>Destination:</span>
+            <span id="ticket-dest">Ben Thanh Central</span>
+          </div>
+          <div class="ticket-row">
+            <span>Payment Method:</span>
+            <span id="ticket-method">Credit / Debit Card</span>
+          </div>
+          <div class="ticket-row">
+            <span>Status:</span>
+            <span style="color:#24715d">Confirmed ✓</span>
+          </div>
+          <div class="ticket-row ticket-total">
+            <span>Fare snapshot:</span>
+            <span id="ticket-fare">7,000 VND</span>
+          </div>
+          <div class="ticket-barcode" id="ticket-barcode">TKT-8A410D2E7BFF</div>
+          <small style="display:block;margin-top:8px;font-size:10px;color:#85998e">Scan QR or Barcode at Fare Gates</small>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script>
+    const options = document.querySelectorAll('.dest-option');
+    const payBtns = document.querySelectorAll('.pay-btn');
+    const destText = document.querySelector('#ticket-dest');
+    const fareText = document.querySelector('#ticket-fare');
+    const methodText = document.querySelector('#ticket-method');
+    const barcodeText = document.querySelector('#ticket-barcode');
+    const buyBtn = document.querySelector('#buy-btn');
+
+    options.forEach(opt => {
+      opt.addEventListener('click', () => {
+        options.forEach(o => o.classList.remove('selected'));
+        opt.classList.add('selected');
+        destText.textContent = opt.dataset.dest;
+        fareText.textContent = Number(opt.dataset.fare).toLocaleString('en-US') + ' VND';
+        updateBarcode();
+      });
+    });
+
+    payBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        payBtns.forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        methodText.textContent = btn.textContent.replace(/[^a-zA-Z ]/g, '').trim();
+      });
+    });
+
+    function updateBarcode() {
+      const code = 'TKT-' + Math.random().toString(16).substring(2, 10).toUpperCase();
+      barcodeText.textContent = code;
+    }
+
+    buyBtn.addEventListener('click', () => {
+      buyBtn.textContent = 'Processing transaction…';
+      buyBtn.disabled = true;
+      setTimeout(() => {
+        buyBtn.textContent = 'Ticket Issued! Tap to Buy Another';
+        buyBtn.disabled = false;
+        updateBarcode();
+        const paper = document.querySelector('.receipt-paper');
+        paper.style.animation = 'none';
+        void paper.offsetWidth;
+        paper.style.animation = 'eject-ticket 0.6s ease-out';
+      }, 700);
+    });
+  </script>
+</body>
+</html>

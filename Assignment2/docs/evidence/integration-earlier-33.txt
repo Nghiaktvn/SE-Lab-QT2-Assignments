@@ -1,0 +1,34 @@
+PASS: Newly registered agent can sign in to portal
+PASS: Agent role cannot access desktop Admin
+PASS: Duplicate account rolls back agent registration
+PASS: Failed registration leaves no orphan company
+PASS: Master-detail invoice uses server prices and totals
+PASS: Master-detail order deducts all stocks
+PASS: Foreign-agent invoice is inaccessible
+PASS: My Orders filters by authenticated agent
+PASS: Replayed request key returns existing order
+PASS: Replayed request does not deduct stock twice
+PASS: Stale product editor cannot overwrite stock after web order
+PASS: Insufficient stock rejects multi-line order
+PASS: Insufficient-stock rejection leaves no order or stock change
+PASS: Controlled second-detail failure exercises database rollback
+PASS: Mid-transaction failure rolls back header, first detail, and stock deduction
+PASS: Cancellation atomically restores every reserved quantity
+PASS: Repeated cancellation cannot restore stock twice
+PASS: Repeated cancellation leaves restored stock unchanged
+PASS: Shipped orders cannot be cancelled
+PASS: Exported shipping manifest contains address, totals, and print stylesheet
+PASS: Date and agent filters report shipped revenue only
+PASS: Concurrent checkouts for last unit allow exactly one order
+PASS: Agent account locks on fifth incorrect password
+PASS: Admin unlock restores Agent access
+PASS: Deactivated agent invalidates existing portal session
+PASS: Deactivated agent cannot place an order
+PASS: Admin role can sign in with PBKDF2 password
+PASS: Admin role cannot sign in to Agent portal
+PASS: Desktop Admin locks on fifth incorrect password
+PASS: Inventory adjustment adds requested quantity
+PASS: Inventory adjustment cannot make stock negative
+PASS: Current-version product edit persists successfully
+PASS: Fixture cleanup restores all five table row counts
+Completed 33 SQL integration checks.

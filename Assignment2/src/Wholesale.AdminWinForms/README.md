@@ -1,0 +1,1 @@
+The WinForms admin application is a runnable classroom demonstration with in-memory sample rows. Persistent order placement and stock deductions are implemented by the Agent Portal against the SQL schema. Set the Wholesale connection string in App.config when connecting other admin operations to the database.

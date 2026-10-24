@@ -1,0 +1,6 @@
+digraph G { graph [rankdir=LR,bgcolor=white,pad=.2,nodesep=.3]; node [fontname="Arial",fontsize=10,shape=plain]; screen [label=<
+<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="10" COLOR="#B6C7D8">
+<TR><TD COLSPAN="2" BGCOLOR="#12345A"><FONT COLOR="white"><B>METROGO | SMART TICKETING</B></FONT></TD></TR>
+<TR><TD BGCOLOR="#F1F5F9"><B>Where are you going?</B><BR/><BR/>Choose a destination<BR ALIGN="LEFT"/><BR/>[x] Ben Thanh  -  7,000 VND<BR ALIGN="LEFT"/><BR/>[ ] Tan Cang  -  12,000 VND<BR ALIGN="LEFT"/><BR/>[ ] Suoi Tien  -  20,000 VND<BR/><BR/><B>Payment method</B><BR/><BR/>[x] Credit / Debit Card<BR ALIGN="LEFT"/><BR/>[ ] Digital Wallet QR<BR/><BR/><FONT COLOR="#146FD1">[ START JOURNEY ]</FONT></TD>
+<TD BGCOLOR="#FFFFFF"><B>TICKET RECEIPT</B><BR/><BR/>METROGO TRANSIT<BR/><BR/>Destination: Ben Thanh<BR/>Fare: 7,000 VND<BR/><BR/>┌ TKT-8A410D2E7BFF19 ┐<BR/>│ Unique barcode ID  │<BR/>└────────────────────┘<BR/><BR/>Demo simulator - no real payment</TD></TR>
+</TABLE>>]; }

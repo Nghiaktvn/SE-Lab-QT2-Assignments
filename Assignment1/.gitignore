@@ -1,0 +1,5 @@
+bin/
+obj/
+tmp_render/
+*_preview.png
+*.inspect.ndjson

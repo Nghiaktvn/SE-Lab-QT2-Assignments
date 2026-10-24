@@ -1,0 +1,299 @@
+[
+  {
+    "name": "SmartTicketing.Domain.TransactionStatus",
+    "kind": "enum",
+    "properties": [],
+    "methods": []
+  },
+  {
+    "name": "SmartTicketing.Domain.PaymentMethod",
+    "kind": "enum",
+    "properties": [],
+    "methods": []
+  },
+  {
+    "name": "SmartTicketing.Domain.PrintStatus",
+    "kind": "enum",
+    "properties": [],
+    "methods": []
+  },
+  {
+    "name": "SmartTicketing.Domain.Destination",
+    "kind": "class/record",
+    "properties": [
+      {
+        "name": "Code",
+        "type": "String"
+      },
+      {
+        "name": "Name",
+        "type": "String"
+      },
+      {
+        "name": "Fare",
+        "type": "Decimal"
+      },
+      {
+        "name": "IsActive",
+        "type": "Boolean"
+      }
+    ],
+    "methods": [
+      "ToString",
+      "GetHashCode",
+      "Equals",
+      "\u003CClone\u003E$",
+      "Deconstruct"
+    ]
+  },
+  {
+    "name": "SmartTicketing.Domain.TicketTransaction",
+    "kind": "class/record",
+    "properties": [
+      {
+        "name": "Id",
+        "type": "Guid"
+      },
+      {
+        "name": "IdempotencyKey",
+        "type": "String"
+      },
+      {
+        "name": "Destination",
+        "type": "Destination"
+      },
+      {
+        "name": "DestinationCode",
+        "type": "String"
+      },
+      {
+        "name": "FareSnapshot",
+        "type": "Decimal"
+      },
+      {
+        "name": "PaymentMethod",
+        "type": "PaymentMethod"
+      },
+      {
+        "name": "Status",
+        "type": "TransactionStatus"
+      },
+      {
+        "name": "GatewayReference",
+        "type": "String"
+      },
+      {
+        "name": "Ticket",
+        "type": "Ticket"
+      },
+      {
+        "name": "CreatedAt",
+        "type": "DateTimeOffset"
+      }
+    ],
+    "methods": [
+      "MarkPaid",
+      "MarkUnknown",
+      "MarkDeclined",
+      "Cancel",
+      "IssueTicket",
+      "PrinterFailed",
+      "Reprint",
+      "Refund"
+    ]
+  },
+  {
+    "name": "SmartTicketing.Domain.Ticket",
+    "kind": "class/record",
+    "properties": [
+      {
+        "name": "TicketId",
+        "type": "Guid"
+      },
+      {
+        "name": "Barcode",
+        "type": "String"
+      },
+      {
+        "name": "ValidUntil",
+        "type": "DateTimeOffset"
+      },
+      {
+        "name": "PrintStatus",
+        "type": "PrintStatus"
+      }
+    ],
+    "methods": [
+      "ToString",
+      "GetHashCode",
+      "Equals",
+      "\u003CClone\u003E$",
+      "Deconstruct"
+    ]
+  },
+  {
+    "name": "SmartTicketing.Domain.PaymentRequest",
+    "kind": "class/record",
+    "properties": [
+      {
+        "name": "TransactionId",
+        "type": "Guid"
+      },
+      {
+        "name": "Amount",
+        "type": "Decimal"
+      },
+      {
+        "name": "IdempotencyKey",
+        "type": "String"
+      },
+      {
+        "name": "Method",
+        "type": "PaymentMethod"
+      }
+    ],
+    "methods": [
+      "ToString",
+      "GetHashCode",
+      "Equals",
+      "\u003CClone\u003E$",
+      "Deconstruct"
+    ]
+  },
+  {
+    "name": "SmartTicketing.Domain.PaymentResult",
+    "kind": "class/record",
+    "properties": [
+      {
+        "name": "Approved",
+        "type": "Boolean"
+      },
+      {
+        "name": "Reference",
+        "type": "String"
+      },
+      {
+        "name": "StatusCode",
+        "type": "String"
+      }
+    ],
+    "methods": [
+      "ToString",
+      "GetHashCode",
+      "Equals",
+      "\u003CClone\u003E$",
+      "Deconstruct"
+    ]
+  },
+  {
+    "name": "SmartTicketing.Domain.IPaymentGateway",
+    "kind": "interface",
+    "properties": [],
+    "methods": [
+      "Authorize",
+      "Reconcile"
+    ]
+  },
+  {
+    "name": "SmartTicketing.Domain.ITicketRepository",
+    "kind": "interface",
+    "properties": [],
+    "methods": [
+      "Save",
+      "Find"
+    ]
+  },
+  {
+    "name": "SmartTicketing.Domain.ITicketPrinter",
+    "kind": "interface",
+    "properties": [],
+    "methods": [
+      "Print"
+    ]
+  },
+  {
+    "name": "Lab.Intelligence.KnowledgeEntry",
+    "kind": "class/record",
+    "properties": [
+      {
+        "name": "Id",
+        "type": "String"
+      },
+      {
+        "name": "Examples",
+        "type": "String"
+      },
+      {
+        "name": "Answer",
+        "type": "String"
+      }
+    ],
+    "methods": [
+      "ToString",
+      "GetHashCode",
+      "Equals",
+      "\u003CClone\u003E$",
+      "Deconstruct"
+    ]
+  },
+  {
+    "name": "Lab.Intelligence.AssistantProduct",
+    "kind": "class/record",
+    "properties": [
+      {
+        "name": "Id",
+        "type": "Int32"
+      },
+      {
+        "name": "Name",
+        "type": "String"
+      },
+      {
+        "name": "Price",
+        "type": "Decimal"
+      },
+      {
+        "name": "Stock",
+        "type": "Int32"
+      }
+    ],
+    "methods": [
+      "ToString",
+      "GetHashCode",
+      "Equals",
+      "\u003CClone\u003E$",
+      "Deconstruct"
+    ]
+  },
+  {
+    "name": "Lab.Intelligence.KnowledgeReply",
+    "kind": "class/record",
+    "properties": [
+      {
+        "name": "Topic",
+        "type": "String"
+      },
+      {
+        "name": "Answer",
+        "type": "String"
+      },
+      {
+        "name": "Confidence",
+        "type": "Double"
+      }
+    ],
+    "methods": [
+      "ToString",
+      "GetHashCode",
+      "Equals",
+      "\u003CClone\u003E$",
+      "Deconstruct"
+    ]
+  },
+  {
+    "name": "Lab.Intelligence.KnowledgeAssistant",
+    "kind": "class/record",
+    "properties": [],
+    "methods": []
+  }
+]

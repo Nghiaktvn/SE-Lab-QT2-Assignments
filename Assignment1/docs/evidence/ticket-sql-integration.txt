@@ -1,0 +1,6 @@
+PASS: SQL provides active routes with positive fares
+PASS: Confirmed ticket persists once
+PASS: Retry keeps the same SQL row and ticket identity
+PASS: Refund retains the original fare, barcode and failed print state
+PASS: Fixture cleanup restores the ticket count
+TOTAL: 5 passed; baseline/final ticket count = 15/15

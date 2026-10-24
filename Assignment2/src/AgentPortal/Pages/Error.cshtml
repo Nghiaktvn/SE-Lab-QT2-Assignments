@@ -1,0 +1,10 @@
+@page "/error"
+@model AgentPortal.Pages.ErrorModel
+@{ ViewData["Title"] = "Please try again"; }
+<section class="card empty-state">
+    <p class="eyebrow">A SMALL PAUSE</p>
+    <h1>Let's get you back on track.</h1>
+    <p>We couldn't complete that request. Please try again shortly.<br />If an order was being placed, check My orders before starting a new one.</p>
+    <a class="primary" asp-page="/Orders/Index">Check my orders ↗</a>
+    <a class="outline" asp-page="/Index">Back to home</a>
+</section>

@@ -1,0 +1,180 @@
+@page "/"
+@model AgentPortal.Pages.IndexModel
+@{ ViewData["Title"] = "Home"; }
+
+<div class="hero-frame frosted-frame" id="hero-frame">
+  <section class="store-hero">
+    <div class="hero-copy">
+      <span class="launch-pill">✦ A FRESH WAY TO WHOLESALE</span>
+      <h1>A little goodness.<br />A lot of <em>possibilities.</em></h1>
+      <p>Great products. Happy shelves. Bring everyday essentials together in one delightful wholesale workspace.</p>
+
+      <div class="hero-actions">
+        <a class="primary" asp-page="/Catalog">Explore the collection <span>↗</span></a>
+        <a class="soft-link" href="#how-it-works">How it works ↓</a>
+      </div>
+
+      <div class="hero-proof">
+        <span>✓ Live inventory</span>
+        <span>✓ Multi-item orders</span>
+        <span>✓ Your own order history</span>
+      </div>
+    </div>
+
+    <div class="hero-visual film-container">
+      <div class="hero-video-wrapper inner-film-card">
+        <video data-motion data-motion-manual muted loop playsinline preload="none" poster="/media/northstar-3d-hero.png" class="hero-video-player" aria-label="Northstar 30-second 3D animated wholesale commercial">
+          <source src="/media/northstar-story-web.mp4" type="video/mp4" />
+        </video>
+        <div class="video-ambient-glow" aria-hidden="true"></div>
+        <div class="film-hud">
+          <div class="hud-top">
+            <span class="film-badge">✦ 3D ANIMATION · 00:30</span>
+            <span class="floating-note note-one">✦ A shelf full of good things</span>
+          </div>
+          <div class="hud-center">
+            <span class="floating-note note-two">Everyday essentials. Extraordinary business.</span>
+          </div>
+          <div class="hud-bottom">
+            <div class="hud-controls">
+              <button type="button" class="motion-toggle" data-motion-toggle aria-label="Play or pause animation">Pause animation</button>
+              <a class="film-hd-pill" href="/media/northstar-story-4k.mp4" download="Northstar-4K-Animation.mp4" title="Download the pristine 4K video">4K Ultra HD ↗</a>
+            </div>
+            <div class="film-timeline" aria-hidden="true"><span class="film-progress-bar"></span></div>
+          </div>
+        </div>
+      </div>
+      <span class="hero-spark spark-one" aria-hidden="true">✦</span>
+      <span class="hero-spark spark-two" aria-hidden="true">✧</span>
+      <span class="hero-spark spark-three" aria-hidden="true">★</span>
+    </div>
+  </section>
+</div>
+
+<div class="benefit-strip">
+  <span><i>▦</i> Everything in one catalog</span>
+  <span><i>✓</i> Stock checked at checkout</span>
+  <span><i>▤</i> Clear, printable invoices</span>
+  <span><i>✳</i> Connected to your warehouse</span>
+</div>
+
+<section class="collection-section">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">FIND YOUR EVERYDAY FAVORITES</p>
+      <h2>Good things, by category.</h2>
+    </div>
+    <a class="soft-link" asp-page="/Catalog">Shop all essentials ↗</a>
+  </div>
+  <div class="category-circles">
+    <a asp-page="/Catalog" asp-route-category='@("Coffee & tea")' class="cat-card cat-coffee">
+      <span><img src="/media/products/coffee.jpg" alt="Roasted coffee beans" /></span>
+      <strong>Coffee & tea</strong>
+      <small>A better daily ritual</small>
+    </a>
+    <a asp-page="/Catalog" asp-route-category="Pantry" class="cat-card cat-pantry">
+      <span><img src="/media/products/rice.jpg" alt="Uncooked rice grains" /></span>
+      <strong>Pantry staples</strong>
+      <small>The everyday heroes</small>
+    </a>
+    <a asp-page="/Catalog" asp-route-category="Snacks" class="cat-card cat-snacks">
+      <span><img src="/media/products/cashew.jpg" alt="Cashew nuts" /></span>
+      <strong>Snacks & treats</strong>
+      <small>Little bites of goodness</small>
+    </a>
+    <a asp-page="/Catalog" asp-route-category="Drinks" class="cat-card cat-drinks">
+      <span><img src="/media/products/coconut.jpg" alt="Fresh coconut water" /></span>
+      <strong>Refreshing drinks</strong>
+      <small>Keep the good days flowing</small>
+    </a>
+  </div>
+</section>
+
+<section class="collection-section">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">PICKED FOR YOUR SHELVES</p>
+      <h2>Meet the everyday collection.</h2>
+    </div>
+    <a class="soft-link" asp-page="/Catalog">See the live catalog ↗</a>
+  </div>
+  <div class="featured-products">
+    @foreach (var p in new[]{("Arabica Coffee Beans","1 kg","coffee.jpg"),("Green Tea Pack","500 g","tea.jpg"),("Cashew Nuts","1 kg","cashew.jpg"),("Dried Mango","500 g","mango.jpg")}) {
+      <a class="featured-card" asp-page="/Catalog" asp-route-search="@p.Item1">
+        <div class="featured-image">
+          <img src="/media/products/@p.Item3" alt="@p.Item1 — illustrative ingredient photography" loading="lazy" />
+          <span>THE EVERYDAY EDIT</span>
+        </div>
+        <div>
+          <small>@p.Item2</small>
+          <h3>@p.Item1</h3>
+          <p>Discover in the catalog <b>↗</b></p>
+        </div>
+      </a>
+    }
+  </div>
+</section>
+
+<!-- (Section 3 story-preview was removed as requested) -->
+
+<section id="how-it-works" class="how-section" data-reveal>
+  <div>
+    <p class="eyebrow">LESS FRICTION. MORE POSSIBILITIES.</p>
+    <h2>From our catalog<br />to your next delivery.</h2>
+    <a class="primary" asp-page="/Login">Enter your workspace ↗</a>
+  </div>
+  <ol>
+    <li>
+      <span>01</span>
+      <div>
+        <h3>Find your favorites</h3>
+        <p>Browse products, pack sizes, prices and available stock.</p>
+      </div>
+    </li>
+    <li>
+      <span>02</span>
+      <div>
+        <h3>Build one beautiful order</h3>
+        <p>Choose quantities across multiple products. We confirm stock together.</p>
+      </div>
+    </li>
+    <li>
+      <span>03</span>
+      <div>
+        <h3>Keep business moving</h3>
+        <p>Follow your order status and keep a printable invoice for your records.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<section class="home-faq" data-reveal>
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">A FEW HELPFUL ANSWERS</p>
+      <h2>A little clarity goes a long way.</h2>
+    </div>
+    <a class="soft-link" asp-page="/Help">Visit the help desk ↗</a>
+  </div>
+  <details>
+    <summary>Who can place an order?</summary>
+    <p>Registered agent partners can sign in to order. Your warehouse administrator creates and manages your account.</p>
+  </details>
+  <details>
+    <summary>When is stock confirmed?</summary>
+    <p>Stock is checked again when you submit. If a product is no longer available, the entire order stays unsaved so you can adjust it.</p>
+  </details>
+  <details>
+    <summary>Can Nova place an order for me?</summary>
+    <p>Nova helps you find products and understand your orders. You choose quantities and confirm every order yourself.</p>
+  </details>
+</section>
+
+<div class="bottom-callout">
+  <span>✳</span>
+  <div>
+    <h2>Your next good thing starts here.</h2>
+    <p>Already a partner? Your wholesale workspace is ready.</p>
+  </div>
+  <a class="primary" asp-page="/Login">Let's get started ↗</a>
+</div>

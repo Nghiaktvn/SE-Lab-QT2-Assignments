@@ -1,0 +1,17 @@
+  Wholesale.Domain -> C:\SE_LAB1_2\Assignment2\src\Wholesale.Domain\bin\Debug\net10.0\Wholesale.Domain.dll
+  Wholesale.Tests -> C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll
+Test run for C:\SE_LAB1_2\Assignment2\tests\Wholesale.Tests\bin\Debug\net10.0\Wholesale.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+  Passed CalculatesMasterDetailTotal [8 ms]
+  Passed RejectsEmptyOrder [1 ms]
+  Passed RejectsZeroQuantity [< 1 ms]
+  Passed AllowsExactStockAndBlocksOversell [< 1 ms]
+  Passed DeductsStockWithoutMutatingOriginal [< 1 ms]
+  Passed ThrowsWhenDeductionWouldGoNegative [< 1 ms]
+  Passed LocksAtFiveFailedAttempts [< 1 ms]
+  Passed AllowsOnlyValidOrderTransitions [< 1 ms]
+
+Test Run Successful.
+Total tests: 8
+     Passed: 8
+ Total time: 0.8311 Seconds

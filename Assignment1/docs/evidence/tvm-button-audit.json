@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Offline route selection ready",
+    "Pause animation button",
+    "Resume animation button",
+    "Sunset color selection",
+    "Travel helper button opens guide",
+    "Continue to payment button",
+    "Cancel journey button",
+    "Bank transfer QR selection",
+    "Digital wallet QR selection",
+    "Approved card payment issues paid ticket",
+    "Declined payment button state",
+    "Timeout requires reconciliation",
+    "Reconcile same payment and issue ticket button",
+    "Print preview button available for paid ticket",
+    "New journey clears prior ticket",
+    "Printer fault exposes recovery and refund buttons",
+    "Demo refund button",
+    "Recover same ticket button"
+  ],
+  "persist": false
+}

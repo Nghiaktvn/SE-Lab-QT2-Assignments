@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="SmartTicketing.Domain.TransactionStatus" Label="TransactionStatus" />
+    <Node Id="SmartTicketing.Domain.PaymentMethod" Label="PaymentMethod" />
+    <Node Id="SmartTicketing.Domain.PrintStatus" Label="PrintStatus" />
+    <Node Id="SmartTicketing.Domain.Destination" Label="Destination" />
+    <Node Id="SmartTicketing.Domain.TicketTransaction" Label="TicketTransaction" />
+    <Node Id="SmartTicketing.Domain.Ticket" Label="Ticket" />
+    <Node Id="SmartTicketing.Domain.PaymentRequest" Label="PaymentRequest" />
+    <Node Id="SmartTicketing.Domain.PaymentResult" Label="PaymentResult" />
+    <Node Id="SmartTicketing.Domain.IPaymentGateway" Label="IPaymentGateway" />
+    <Node Id="SmartTicketing.Domain.ITicketRepository" Label="ITicketRepository" />
+    <Node Id="SmartTicketing.Domain.ITicketPrinter" Label="ITicketPrinter" />
+    <Node Id="Lab.Intelligence.KnowledgeEntry" Label="KnowledgeEntry" />
+    <Node Id="Lab.Intelligence.AssistantProduct" Label="AssistantProduct" />
+    <Node Id="Lab.Intelligence.KnowledgeReply" Label="KnowledgeReply" />
+    <Node Id="Lab.Intelligence.KnowledgeAssistant" Label="KnowledgeAssistant" />
+  </Nodes>
+  <Links>
+    <Link Source="SmartTicketing.Domain.TicketTransaction" Target="SmartTicketing.Domain.Destination" Label="property type" />
+    <Link Source="SmartTicketing.Domain.TicketTransaction" Target="SmartTicketing.Domain.PaymentMethod" Label="property type" />
+    <Link Source="SmartTicketing.Domain.TicketTransaction" Target="SmartTicketing.Domain.TransactionStatus" Label="property type" />
+    <Link Source="SmartTicketing.Domain.TicketTransaction" Target="SmartTicketing.Domain.Ticket" Label="property type" />
+    <Link Source="SmartTicketing.Domain.Ticket" Target="SmartTicketing.Domain.PrintStatus" Label="property type" />
+    <Link Source="SmartTicketing.Domain.PaymentRequest" Target="SmartTicketing.Domain.PaymentMethod" Label="property type" />
+  </Links>
+</DirectedGraph>

@@ -1,0 +1,13 @@
+Entity      Rows
+----------- -----------
+Agent                15
+Item                 15
+Order                18
+OrderDetail          21
+Users                16
+OrderID     OrderStatus          Lines       Total
+----------- -------------------- ----------- ----------------------------------------
+         23 Pending                        2                               1045000.00
+RemainingQATriggers
+-------------------
+                  0

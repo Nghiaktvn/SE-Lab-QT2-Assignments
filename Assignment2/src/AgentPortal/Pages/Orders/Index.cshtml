@@ -1,0 +1,14 @@
+@page "/orders"
+@model AgentPortal.Pages.Orders.IndexModel
+@{ ViewData["Title"] = "My orders"; }
+<section class="page-heading"><div><p class="eyebrow">FROM CHECKOUT TO YOUR DOOR</p><h1>Every order. All here.</h1><p>Follow your orders and keep your invoices close.</p></div><a class="primary" asp-page="/Catalog">+ New order</a></section>
+<div class="stats-grid"><div class="stat"><span>Total orders</span><strong>@Model.Orders.Count</strong></div><div class="stat"><span>Awaiting dispatch</span><strong>@Model.Orders.Count(o => o.Status is "Pending" or "Processing")</strong></div><div class="stat"><span>Shipped</span><strong>@Model.Orders.Count(o => o.Status == "Shipped")</strong></div></div>
+@if (!string.IsNullOrEmpty(Model.Error)) { <div class="alert" role="alert">@Model.Error</div> }
+@if (TempData["OrderNotice"] is string notice) { <div class="alert" role="alert">@notice</div> }
+<div class="card"><div class="table-toolbar"><div><h2>Order history</h2><p>Invoices show order and classroom payment status.</p></div><label>Filter status<select id="order-status-filter"><option value="">All statuses</option><option>Pending</option><option>Processing</option><option>Shipped</option><option>Cancelled</option></select></label></div><div class="table-scroll"><table><thead><tr><th>Order reference</th><th>Placed on</th><th>Status</th><th>Payment</th><th>Order total</th><th></th></tr></thead><tbody>
+@foreach (var order in Model.Orders) {
+<tr data-order-status="@order.Status"><td><strong>#@order.Id</strong><small>NS-@order.Id.ToString("D5")</small></td><td>@DateTime.SpecifyKind(order.Date, DateTimeKind.Utc).ToLocalTime().ToString("dd MMM yyyy HH:mm")</td><td><span class="badge badge-@order.Status.ToLowerInvariant()">@order.Status</span></td><td><span class="badge badge-@order.PaymentStatus.ToLowerInvariant()">@order.PaymentStatus@(order.PaymentStatus == "Paid" ? " · demo" : "")</span></td><td class="money">@order.Total.ToString("N0") VND</td><td><a class="invoice-link" asp-page="/Orders/Invoice" asp-route-id="@order.Id">View invoice ↗</a></td></tr>
+}
+</tbody></table></div>
+@if (Model.Orders.Count == 0 && Model.Error is null) { <div class="empty-state"><h3>Your first order starts here.</h3><p>Browse the catalog to build your first wholesale order.</p><a class="primary" asp-page="/Catalog">Explore catalog →</a></div> }
+<p class="empty-search" id="no-status-orders" hidden>No orders with this status.</p></div>

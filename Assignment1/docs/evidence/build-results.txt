@@ -1,0 +1,10 @@
+  SmartTicketing.Domain -> C:\SE_LAB1_2\Assignment1\src\SmartTicketing.Domain\bin\Debug\net10.0\SmartTicketing.Domain.dll
+  SmartTicketing.WinForms -> C:\SE_LAB1_2\Assignment1\src\SmartTicketing.WinForms\bin\Debug\net10.0-windows\SmartTicketing.WinForms.dll
+  SmartTicketing.Tests -> C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll
+  ModelEngineering -> C:\SE_LAB1_2\Assignment1\tools\ModelEngineering\bin\Debug\net10.0\ModelEngineering.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:04.05

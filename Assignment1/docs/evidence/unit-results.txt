@@ -1,0 +1,6 @@
+Test run for C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\bin\Debug\net10.0\SmartTicketing.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+WARNING: Overwriting results file: C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\TestResults\ticket-tests.trx
+Results File: C:\SE_LAB1_2\Assignment1\tests\SmartTicketing.Tests\TestResults\ticket-tests.trx
+
+Passed!  - Failed:     0, Passed:    21, Skipped:     0, Total:    21, Duration: 76 ms - SmartTicketing.Tests.dll (net10.0)

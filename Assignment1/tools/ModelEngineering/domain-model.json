@@ -1,0 +1,5 @@
+{
+  "Destination": { "Code": "string?", "Name": "string?", "Fare": "decimal", "IsActive": "bool" },
+  "TicketTransaction": { "Id": "System.Guid", "IdempotencyKey": "string?", "DestinationCode": "string?", "FareSnapshot": "decimal" },
+  "Ticket": { "TicketId": "System.Guid", "Barcode": "string?", "ValidUntil": "System.DateTimeOffset" }
+}

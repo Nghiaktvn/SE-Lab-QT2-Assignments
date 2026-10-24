@@ -1,0 +1,23 @@
+name: Verify both labs
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-and-unit-test:
+    runs-on: windows-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Build Assignment 1
+        run: dotnet build Assignment1/SmartTicketing.sln --configuration Debug --maxcpucount:1
+      - name: Unit-test Assignment 1
+        run: dotnet test Assignment1/tests/SmartTicketing.Tests/SmartTicketing.Tests.csproj --configuration Debug --no-restore
+      - name: Build Assignment 2
+        run: dotnet build Assignment2/WholesaleManagement.sln --configuration Debug --maxcpucount:1
+      - name: Unit-test Assignment 2
+        run: dotnet test Assignment2/tests/Wholesale.Tests/Wholesale.Tests.csproj --configuration Debug --no-restore

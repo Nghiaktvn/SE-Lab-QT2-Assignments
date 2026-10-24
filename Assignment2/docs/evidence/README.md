@@ -1,0 +1,4 @@
+The final unit run is assignment2-final.trx: 26 passed, zero failed. Its console output is unit-tests-final.txt. The current real SQL integration run passed 46 checks with an isolated two-product Chrome checkout; see integration-results.txt and integration-results.json. The paid-invoice and shipping-manifest PDFs are one-page A4 checks. The live paid invoice for two-line order #23 is captured in docs/screenshots/payment-confirmed-desktop.png and payment-confirmed-demo-v2.png.
+
+wholesale-tests.trx preserves an earlier aborted run: the test host could not start because the machine ran out of memory. It contains no completed test results and is superseded by assignment2-final.trx. The final run succeeded after bounding the process heap.
+The earlier 33-check output is retained separately as historical evidence; integration-results.txt is the current run.
