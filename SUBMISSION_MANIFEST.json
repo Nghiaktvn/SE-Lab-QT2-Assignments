@@ -1,17 +1,17 @@
 [
   {
     "file": "Assignment1_Submission.zip",
-    "bytes": 13940076,
-    "sha256": "bc3223ea58ba2355885cbe66d39c1d984de352f6a4f735acec3429826ad0c605"
+    "bytes": 13940261,
+    "sha256": "d7c05cddb6aa84abbe5fa0e489dc2296552d2a6ea522822135c66c7bfe233dfa"
   },
   {
     "file": "Assignment2_Submission.zip",
-    "bytes": 25347573,
-    "sha256": "aab09d7423e36bc7b383aac7b99b42b7092d81367c9d60a049aa7cddaaa75963"
+    "bytes": 25347743,
+    "sha256": "dbff436f4ff8b40ddfe5a8131c6942d2920d25b736dd3983b44acd517167bb94"
   },
   {
     "file": "Complete_Lab_Package.zip",
-    "bytes": 35697191,
-    "sha256": "78434dc34b9e37bad264c37bcc8cf4c2f3bdf15dc40f97ca82ef1611a837631d"
+    "bytes": 35698034,
+    "sha256": "f310b4cf2c5c65261ca88b6be1bd791f13f0edbf1ce43ad5f34acdd339c0f3b8"
   }
 ]
