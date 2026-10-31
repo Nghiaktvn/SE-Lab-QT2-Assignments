@@ -1,5 +1,5 @@
 # QT2 Software Engineering Lab — Complete Working Package
-**Phạm Trung Nghĩa — 524H0172, Trần Gia Triều**
+**Phạm Trung Nghĩa — 524H0172, Trần Gia Triều - 519H0245, Lê Đạt - 524H0044**
 
 Project repository: [Nghiaktvn/SE-Lab-QT2-Assignments](https://github.com/Nghiaktvn/SE-Lab-QT2-Assignments). The two assignments remain separate solutions and  folders.
 
